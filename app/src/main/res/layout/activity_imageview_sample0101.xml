@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".imageview.ImageViewSampe0101">
+
+    <!-- 解説 -->
+    <!--
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+上記で画面の縦横一杯の領域で画像を表示する設定になりますが、実際の画像ピクセルと表示領域は必ずしも合ってはいません。
+scaleTypeは centerCrop を使うと画面に合うように拡大縮小してくれます。
+android:scaleType="centerCrop"
+    -->
+    <ImageView
+        android:src="@drawable/imageview_sample_image1"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/imageview_sample0101_description"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

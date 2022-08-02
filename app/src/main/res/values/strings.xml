@@ -1,0 +1,153 @@
+<resources>
+    <string name="app_name">AndroidSample</string>
+    <string name="UnderConstruction">工事中</string>
+    <string name="hello">Hello:ハロー</string>
+    <string name="world">World:ワールド</string>
+    <string name="tapped">Tapped</string>
+    <string name="hint">文字を入力してください</string>
+    <string name="button">Button</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="signin">Sign in</string>
+    <string name="register_button">登録</string>
+    <string name="return_button">戻る</string>
+    <string name="invisible">非表示</string>
+    <string name="visible">表示</string>
+    <string name="start_button">開始</string>
+    <string name="stop_button">停止</string>
+    <string name="description_droid">Droid君</string>
+    <string name="description_image">イメージ画像</string>
+    <string name="description_icon">アイコン画像</string>
+    <string name="dot">.</string>
+    <string name="header">ヘッダーコメント部</string>
+    <string name="footer">フッターコメント部</string>
+    <string name="save">保存</string>
+    <string name="read">読込</string>
+    <string name="delete">削除</string>
+    <string name="search">検索</string>
+    <string name="post">送信</string>
+    <string name="save_commit">保存しました。</string>
+    <string name="save_failed">保存に失敗しました。</string>
+    <string name="read_commit">読込しました。</string>
+    <string name="read_failed">読込に失敗しました。</string>
+    <string name="register_commit">登録しました。</string>
+    <string name="register_failed">登録に失敗しました。</string>
+    <string name="no_search_data">検索結果はありません。</string>
+    <string name="running">実行中．．．しばらくお待ちください。</string>
+
+    <string name="button_sample0101_button">Button</string>
+    <string name="button_sample0101_wrap">layout_width=wrap_content</string>
+    <string name="button_sample0101_match">layout_width=match_parent</string>
+    <string name="button_sample0302_button">Custom Button</string>
+    <string name="button_sample0302_tapped">Tapped:</string>
+    <string name="button_sample0401_button">イメージボタン</string>
+    <string name="button_sample0401_image_description">芹菜ちゃん</string>
+    <string name="button_sample0501_init_message">どれかのボタンをクリックしてね。</string>
+    <string name="button_sample0501_button1">Button 1</string>
+    <string name="button_sample0501_button2">Button 2</string>
+    <string name="button_sample0501_button3">Button 3</string>
+    <string name="button_sample0501_button4">Button 4</string>
+    <string name="button_sample0501_button5">Button 5</string>
+
+    <string name="textview_sample_text">メッセージ：\nTest Text View</string>
+    <string name="textview_sample0401_text">"When users select text in your app,
+you can now display text selection
+actions such as Cut, Copy, and Paste in a floating toolbar."</string>
+    <string name="edittext_sample0301_hint1">指定なし</string>
+    <string name="edittext_sample0301_hint2">hint</string>
+    <string name="edittext_sample0301_hint3">文字数制限：4文字</string>
+    <string name="edittext_sample0301_hint4">行数制限：1行</string>
+    <string name="edittext_sample0401_hint">8文字まで入力可</string>
+
+    <string name="imageview_sample0101_description">イメージ１</string>
+    <string name="imageview_sample0102_description">クリックで画像を切り替えます</string>
+    <string name="imageview_sample0401_rotation">回転</string>
+    <string name="imageview_sample0401_resize">縮小</string>
+    <string name="imageview_sample0401_flip">フリップ</string>
+
+    <string name="progressbar_sample0102_button2">進捗加算</string>
+    <string name="snackbar_sample0102_ask">スナックバーメッセージをクリアしますか？</string>
+    <string name="snackbar_sample0102_message">Understood ! 消しましたー</string>
+
+    <string name="checkbox_sample0101_checkbox1_text">チェックボックスサンプル1</string>
+    <string name="checkbox_sample0101_checkbox2_text">チェックボックスサンプル2</string>
+    <string name="datepicker_sample0101_init_text">DatePicker サンプルです</string>
+    <string name="datepicker_sample0101_buttonA">日付Aを選択</string>
+    <string name="datepicker_sample0101_buttonB">日付Bを選択</string>
+    <string name="timepicker_sample0101_init_text">TimePicker サンプルです</string>
+    <string name="timepicker_sample0101_button">時間を選択</string>
+    <string name="numberpicker_sample0101_init_text">NumberPickerサンプルです</string>
+    <string name="alertdialog_sample0101_init_text">AlertDialogサンプルです</string>
+    <string name="alertdialog_sample0101_title">項目を選択してください。</string>
+    <string name="alertdialog_sample0101_ok_cancel_title">OK or Calcel</string>
+    <string name="alertdialog_sample0101_ok_cancel_message">選択してください。</string>
+    <string name="alertdialog_sample0201_init_text">カスタムAlertDialogサンプルです</string>
+    <string name="alertdialog_sample0201_description1">選択画像</string>
+    <string name="alertdialog_sample0201_moon">セーラームーン</string>
+    <string name="alertdialog_sample0201_tibimoon">ちびうさ</string>
+    <string name="alertdialog_sample0201_title">画像を選択してください。</string>
+    <string name="alertdialog_sample0201_question">どの画像にしますか？</string>
+    <string name="passwordentry_sample0101_title">カスタムAlertDialog パスワード入力のサンプルです</string>
+    <string name="passwordentry_sample0101_id_text">ID：</string>
+    <string name="passwordentry_sample0101_password_text">password：</string>
+    <string name="passwordentry_sample0101_dialog_title">ID、パスワード入力</string>
+    <string name="passwordentry_sample0101_dialog_error">ID、またはパスワードが未入力です</string>
+    <string name="passwordentry_sample0101_id_hint">username</string>
+    <string name="passwordentry_sample0101_password_hint">password</string>
+
+    <string name="activity_sample0000_main_text">Main Activity</string>
+    <string name="activity_sample0000_move">MOVE</string>
+    <string name="activity_sample0000_sub_text">Sub Activity</string>
+    <string name="activity_sample0000_return_sub">RETURN</string>
+    <string name="activity_sample0201_hint1">Message to Sub</string>
+    <string name="activity_sample0201_hint2">Message to Main</string>
+    <string name="activity_sample0201_to_main">to Main</string>
+    <string name="activity_sample0201_from_main">from Main</string>
+    <string name="activity_sample0201_to_sub">to Sub</string>
+    <string name="activity_sample0201_from_sub">from Sub</string>
+    <string name="activity_sample0201_message">message</string>
+    <string name="activity_sample0301_hint">input anything you like</string>
+    <string name="activity_sample0301_texta_add">aaaを追加</string>
+    <string name="activity_sample0301_textb_add">bbbを追加</string>
+
+    <string name="fragment_sampe0401_button01">Button 01</string>
+    <string name="fragment_sampe0401_button02">Button 02</string>
+    <string name="fragment_sampe0401_pop01">Pop 01</string>
+    <string name="fragment_sampe0401_pop02">Pop 02</string>
+
+    <string name="service_sampe0101_title">ServiceSampe0101 ゆるゆり01.mp3</string>
+    <string name="service_sampe0101_toast">"Start Walking
+【ゆるゆり】「ゆるゆり さん☆ハイ！」
+OPテーマ「ちょちょちょ！ゆるゆり☆かぷりっちょ！！！」.mp3"</string>
+    <string name="service_sampe0201_title">ServiceSampe0201 サービスを使って画像を表示させ続ける</string>
+    <string name="service_sampe0201_description">サービスを使って画像を表示させ続ける</string>
+    <string name="service_sampe0201_invalid_permission">「他のアプリの上に重ねて表示」の設定を許可に変更してください。</string>
+    <string name="service_sampe0301_text">このサンプルはログに出力するのみです。開始ボタンを押しても画面上の変化はありません。また、ボタン押下回数分処理がキューに追加されるので注意してください。</string>
+
+    <string name="listfragment_sampe0101_text">ListActivityがAPI30で非推奨となったためListFragmentで作成しました</string>
+
+    <string name="internalstorage_sample0101_no_text">保存対象の文字列を入力してください。</string>
+    <string name="internalstorage_sample0101_init_text">アプリ固有の内部ストレージ(Internal Storage)にファイルを保存するサンプル1です。</string>
+    <string name="internalstorage_sample0102_init_text">アプリ固有の内部ストレージ(Internal Storage)にファイルを保存するサンプル2です。</string>
+    <string name="externalstorage_sample0101_init_text">まずは「外部ストレージに保存」ボタンを押下して画像を保存してください。</string>
+    <string name="externalstorage_sample0101_save_button_text">外部ストレージに保存</string>
+    <string name="externalstorage_sample0101_is_writable_fail_text">外部ストレージへの出力が許可されていません。</string>
+    <string name="externalstorage_sample0101_is_readable_fail_text">外部ストレージの読込が許可されていません。</string>
+    <string name="mediastore_sample0201_invalid_permission">パーミッション：READ_EXTERNAL_STORAGEを許可してください。</string>
+    <string name="saf_sample0101_returndata_null">戻り値のintentがnullです。</string>
+    <string name="saf_sample0201_init_text">「Storage Access Framework sample0201」の文字列を保存します。</string>
+    <string name="sqlite_sample0101_hint_company">company</string>
+    <string name="sqlite_sample0101_hint_stockprice">US$price</string>
+    <string name="sqlite_sample0101_entry_fail">会社名か価格の値が不正です。値を正しく指定してください。</string>
+
+    <string name="httppost_sample0101_label_word">word:</string>
+    <string name="httppost_sample0101_label_browser">ブラウザで表示</string>
+    <string name="httppost_sample0101_entry_fail">入力値が不正です。値を正しく指定してください。</string>
+    <string name="httppost_sample0101_php_url">http://yone39pswte.starfree.jp/httppost_sample0101.php</string>
+    <string name="httppost_sample0101_html_url">http://yone39pswte.starfree.jp/httppost_sample0101.html</string>
+    <string name="httppost_sample0101_postsend">POST送信中</string>
+    <string name="httppost_sample0101_postsendcommit">POST送信しました。resultdata=</string>
+    <string name="httppost_sample0101_strerror">"Error: That didn't work!"</string>
+    <string name="httpget_sample0101_hint">input a image url</string>
+
+</resources>

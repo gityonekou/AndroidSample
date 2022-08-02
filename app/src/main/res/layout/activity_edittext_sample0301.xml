@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dfe"
+    android:padding="10dp"
+    tools:context=".text.EditTextSampe0301">
+
+    <!-- 指定なし -->
+    <EditText
+        android:id="@+id/edit_text1"
+        android:hint="@string/edittext_sample0301_hint1"
+        android:autofillHints="@string/edittext_sample0301_hint1"
+        android:inputType="text"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#ffffff"/>
+
+    <!-- hint -->
+    <EditText
+        android:id="@+id/edit_text2"
+        android:hint="@string/edittext_sample0301_hint2"
+        android:autofillHints="@string/edittext_sample0301_hint2"
+        android:inputType="text"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#ffffff"/>
+
+    <!-- 入力文字数制限:4文字 -->
+    <EditText
+        android:id="@+id/edit_text3"
+        android:hint="@string/edittext_sample0301_hint3"
+        android:autofillHints="@string/edittext_sample0301_hint3"
+        android:inputType="text"
+        android:gravity="start"
+        android:maxLength="4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#ffffff"/>
+
+    <!-- 入力行数制限：1行 -->
+    <EditText
+        android:id="@+id/edit_text4"
+        android:hint="@string/edittext_sample0301_hint4"
+        android:autofillHints="@string/edittext_sample0301_hint4"
+        android:inputType="text"
+        android:gravity="start"
+        android:maxLines="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="#ffffff"/>
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:background="#fee"
+    tools:context=".datastorage.MediaStoreSample0101">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediastore_sample0101_textview"
+        android:textColor="#000"
+        android:layout_margin="10dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediastore_sample0101_button"
+        android:text="@string/save"
+        android:layout_margin="10dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mediastore_sample0101_imageview"
+        android:scaleType="centerInside"
+        android:layout_margin="10dp"
+        android:contentDescription="@string/description_image" />
+
+</LinearLayout>

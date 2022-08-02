@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".datastorage.InternalStorageSample0101">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/internalstorage_sample0101_edit_text"
+        android:layout_margin="30dp"
+        android:autofillHints="@string/hint"
+        android:hint="@string/hint"
+        android:background="#fff"
+        android:inputType="text"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.05" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/internalstorage_sample0101_save_button"
+        android:text="@string/save"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/internalstorage_sample0101_edit_text"
+        app:layout_constraintEnd_toStartOf="@+id/internalstorage_sample0101_read_button"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/internalstorage_sample0101_read_button"
+        android:text="@string/read"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/internalstorage_sample0101_save_button"
+        app:layout_constraintTop_toBottomOf="@+id/internalstorage_sample0101_edit_text"
+        app:layout_constraintEnd_toStartOf="@+id/internalstorage_sample0101_delete_button"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/internalstorage_sample0101_delete_button"
+        android:text="@string/delete"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/internalstorage_sample0101_read_button"
+        app:layout_constraintTop_toBottomOf="@+id/internalstorage_sample0101_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/internalstorage_sample0101_textview"
+        android:textSize="30sp"
+        android:layout_margin="20dp"
+        android:textColor="#000"
+        app:layout_constraintTop_toBottomOf="@+id/internalstorage_sample0101_save_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="0.15" />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

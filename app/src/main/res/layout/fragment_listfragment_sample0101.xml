@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- ListFragmentを使用する場合、このリストだけを含んだレイアウトxmlは不要となります。詳しくは
+ListFragmentSampe0101Fragmentを参照のこと -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- ListFragmentを使用する場合、このソースは不要です -->
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/listfragment_samp0101_list" />
+
+</LinearLayout>

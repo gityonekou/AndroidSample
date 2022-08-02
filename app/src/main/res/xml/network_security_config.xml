@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config>
+    <domain-config cleartextTrafficPermitted="true">
+        <!-- yone39pswte.starfree.jpのサイトのみhttp接続を許可します。詳しくは以下を参照
+        https://backport.net/blog/2018/12/27/how_to_allow_http_on_android_9/
+        -->
+        <domain includeSubdomains="true">yone39pswte.starfree.jp</domain>
+    </domain-config>
+</network-security-config>

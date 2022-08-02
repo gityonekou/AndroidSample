@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="imageview_sampe0602_icon_name_array">
+        <item>btn_star_big_on</item>
+        <item>btn_star_big_off</item>
+        <item>button_onoff_indicator_off</item>
+        <item>button_onoff_indicator_on</item>
+        <item>checkbox_on_background</item>
+        <item>edit_text</item>
+        <item>editbox_background</item>
+        <item>editbox_background_normal</item>
+        <item>editbox_dropdown_dark_frame</item>
+        <item>editbox_dropdown_light_frame</item>
+        <item>gallery_thumb</item>
+        <item>ic_btn_speak_now</item>
+        <item>ic_delete</item>
+        <item>ic_dialog_alert</item>
+        <item>ic_dialog_dialer</item>
+        <item>ic_dialog_email</item>
+        <item>ic_dialog_info</item>
+        <item>ic_dialog_map</item>
+        <item>ic_input_add</item>
+        <item>ic_input_delete</item>
+        <item>ic_input_get</item>
+        <item>ic_lock_idle_alarm</item>
+        <item>ic_lock_idle_charging</item>
+        <item>ic_lock_idle_lock</item>
+        <item>ic_lock_idle_low_battery</item>
+        <item>ic_lock_lock</item>
+        <item>ic_lock_power_off</item>
+        <item>ic_lock_silent_mode</item>
+        <item>ic_lock_silent_mode_off</item>
+        <item>ic_media_ff</item>
+        <item>ic_media_next</item>
+        <item>ic_media_pause</item>
+        <item>ic_media_play</item>
+        <item>ic_media_previous</item>
+        <item>ic_media_rew</item>
+        <item>ic_menu_add</item>
+        <item>ic_menu_agenda</item>
+        <item>ic_menu_always_landscape_portrait</item>
+        <item>ic_menu_call</item>
+        <item>ic_menu_camera</item>
+        <item>ic_menu_close_clear_cancel</item>
+        <item>ic_menu_compass</item>
+        <item>ic_menu_crop</item>
+        <item>ic_menu_day</item>
+        <item>ic_menu_delete</item>
+        <item>ic_menu_directions</item>
+        <item>ic_menu_edit</item>
+        <item>ic_menu_gallery</item>
+        <item>ic_menu_help</item>
+        <item>ic_menu_info_details</item>
+    </string-array>
+
+    <string-array name="spinner_sampe0102_array1">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+    <string-array name="spinner_sampe0102_array2">
+        <item>やさい</item>
+        <item>果物</item>
+        <item>ごはん</item>
+        <item>お肉</item>
+        <item>お肉食べたい。。</item>
+        <item>そして、眠い。。。。</item>
+    </string-array>
+
+    <string-array name="spinner_sampe0201_drawable_text_array1">
+        <item>セーラームーン</item>
+        <item>マーキュリー</item>
+        <item>マーズ</item>
+        <item>ジュピター</item>
+        <item>ヴィーナス</item>
+        <item>ちびムーン</item>
+        <item>プルート</item>
+        <item>ウラヌス</item>
+        <item>ネプチューン</item>
+        <item>サターン</item>
+    </string-array>
+
+    <string-array name="spinner_sampe0201_drawable_array">
+        <item>moon1</item>
+        <item>moon2</item>
+        <item>moon3</item>
+        <item>moon4</item>
+        <item>moon5</item>
+        <item>moon6</item>
+        <item>moon7</item>
+        <item>moon8</item>
+        <item>moon11</item>
+        <item>moon12</item>
+    </string-array>
+
+    <string-array name="spinner_sampe0201_assets_text_array2">
+        <item>Re:ゼロ×ぷよクエ コラボ開催決定</item>
+        <item>Re:ゼロから始める</item>
+        <item>異世界生活</item>
+        <item>Re:ゼロ</item>
+        <item>リゼロコラボ中</item>
+        <item>リゼロ</item>
+        <item>Re:ゼロ6</item>
+        <item>Re:ゼロ7</item>
+        <item>リゼロ8</item>
+        <item>Re:ゼロ9</item>
+    </string-array>
+
+    <string-array name="spinner_sampe0201_assets_array">
+        <item>rizero10.jpg</item>
+        <item>rizero1.jpg</item>
+        <item>rizero2.jpg</item>
+        <item>rizero3.jpg</item>
+        <item>rizero4.jpg</item>
+        <item>rizero5.jpg</item>
+        <item>rizero6.jpg</item>
+        <item>rizero7.jpg</item>
+        <item>rizero8.jpg</item>
+        <item>rizero9.jpg</item>
+    </string-array>
+
+    <string-array name="alertdialog_sampe0101_array">
+        <item>選択(1)</item>
+        <item>選択(2)</item>
+        <item>選択(3)</item>
+        <item>やっぱりお肉だな</item>
+    </string-array>
+
+    <string-array name="listview_sampe0102_array">
+        <item>ゆるゆり さん★ハイ</item>
+        <item>→ちょちょちょ！ゆるゆり★かぷりっちょ</item>
+        <item>→みゅーじっく★フィーバー</item>
+        <item>六条間の侵略者→好感Win-Win無条件</item>
+        <item>ソードアートオンライン(SAO)</item>
+        <item>ソードアートオンラインII(SAO)</item>
+        <item>→Courage</item>
+        <item>→Ignite</item>
+        <item>ニセコイ→CLICK</item>
+        <item>ノーゲーム ノーライフ</item>
+        <item>うたわれるもの 偽りの仮面</item>
+        <item>→不安定な神様</item>
+        <item>→ユメカウツツカ</item>
+        <item>ご注文はうさぎですか(2期)</item>
+        <item>→ときめきポポロン</item>
+        <item>→ノーポイッ</item>
+        <item>→ときめきLOOPにのって</item>
+        <item>→なんとなくミライ</item>
+        <item>化け物語→君の知らない物語 - supercell</item>
+        <item>アクセルワールド→君と歩くこの世界を</item>
+        <item>咲 saki→Glossy MMM</item>
+        <item>咲-saki- 阿知賀編</item>
+        <item>這いよれ！ニャル子さん→太陽曰く燃えよカオス</item>
+        <item>這いよれ！ニャル子さんW→恋は渾沌の隷也</item>
+        <item>緋弾のアリア→Scarlet Ballet</item>
+    </string-array>
+
+    <string-array name="listview_sampe0301_name_array">
+        <item>セーラームーン</item>
+        <item>セーラーマーキュリー</item>
+        <item>セーラーマーズ</item>
+        <item>セーラージュピター</item>
+        <item>セーラーヴィーナス</item>
+        <item>セーラーちびムーン</item>
+        <item>セーラープルート</item>
+        <item>セーラーウラヌス</item>
+        <item>セーラーネプチューン</item>
+        <item>セーラーサターン</item>
+    </string-array>
+
+    <string-array name="listview_sampe0301_drawable_array">
+        <item>moon1</item>
+        <item>moon2</item>
+        <item>moon3</item>
+        <item>moon4</item>
+        <item>moon5</item>
+        <item>moon6</item>
+        <item>moon7</item>
+        <item>moon8</item>
+        <item>moon11</item>
+        <item>moon12</item>
+    </string-array>
+
+    <string-array name="gridview_sampe0201_url_array">
+        <item>https://sega.jp/wp-content/uploads/2020/02/200226_2_2.jpg</item>
+        <item>https://www.4gamer.net/games/202/G020261/20210226037/SS/008.jpg</item>
+        <item>https://img2.animatetimes.com/2021/02/6039e5632b3ce_1608eb4a3f4aacc4b2cbd8d8a9b40d06.jpg</item>
+        <item>https://animeanime.jp/imgs/p/ypfYP8UGHHv1ocFz1cgmQGihmaytrq_oqaqr/389949.jpg</item>
+        <item>https://img2.animatetimes.com/2020/03/5e5e1ac9b9a1a_ae725b7d70cd33284d2807f2ffbeefb9.png</item>
+        <item>https://prtimes.jp/i/5397/3767/resize/d5397-3767-360964-10.jpg</item>
+        <item>http://sailormoon-official.com/upload/20210303_game_04.png</item>
+        <item>http://sailormoon-official.com/upload/20210303_game_02.png</item>
+        <item>https://img2.animatetimes.com/2020/03/5e7cf5af5c946_5baec95df19107f4b4d9b6005b5ea042.jpg</item>
+        <item>http://sailormoon-official.com/upload/20210303_game_09.png</item>
+    </string-array>
+
+    <string-array name="http_get_name_list">
+        <item>ドロイド君</item>
+        <item>リゼロ：エミリア</item>
+        <item>リゼロ：レム</item>
+        <item>リゼロ：ラム</item>
+        <item>リゼロ：ベアトリス</item>
+        <item>エラーアイテム</item>
+    </string-array>
+
+    <string-array name="http_get_url_list">
+        <item>https://developer.android.com/images/home/android-p-clear-bg-with-shadow.png?hl=JA</item>
+        <item>https://game.watch.impress.co.jp/img/gmw/docs/1342/936/p06_l.jpg</item>
+        <item>https://game.watch.impress.co.jp/img/gmw/docs/1342/936/p08_l.jpg</item>
+        <item>https://game.watch.impress.co.jp/img/gmw/docs/1342/936/p07_l.jpg</item>
+        <item>https://game.watch.impress.co.jp/img/gmw/docs/1342/936/p09_l.jpg</item>
+        <item>http://sailormoon-official.com/upload/20210303_game_02.png</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#cfd"
+    tools:context=".select.AlertDialogSampe0201">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alertdialog_sample0201_imageview"
+        android:contentDescription="@string/alertdialog_sample0201_description1" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alertdialog_sample0201_textview"
+        android:text="@string/alertdialog_sample0201_init_text"
+        android:textSize="25sp" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/alertdialog_sample0201_button"
+        android:text="@string/start_button"
+        android:layout_margin="20dp" />
+
+</LinearLayout>

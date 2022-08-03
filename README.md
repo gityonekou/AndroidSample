@@ -1,6 +1,6 @@
 # AndroidSample
-androidプログラミング勉強01
-
+androidプログラミング勉強01<br>
+<br>
 「nyanのアプリ開発」のアンドロイドプログラミングを参考に1章～20章+&までのサンプル動作を確認できるようにしています。<br>
 [nyanのアプリ開発]<br>
 https://akira-watson.com/<br>

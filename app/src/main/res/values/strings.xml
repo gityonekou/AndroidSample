@@ -35,6 +35,7 @@
     <string name="no_search_data">検索結果はありません。</string>
     <string name="running">実行中．．．しばらくお待ちください。</string>
 
+    <string name="topmenu">トップメニュー</string>
     <string name="button_sample0101_button">Button</string>
     <string name="button_sample0101_wrap">layout_width=wrap_content</string>
     <string name="button_sample0101_match">layout_width=match_parent</string>

@@ -5,36 +5,34 @@ package com.example.androidsample.app;
  *
  * ServiceSampe0302ではSoundPoolを使ってゲームの効果音の再生します。
  *
+ *****
+ *  ver2.00.00 更新
+ * ・JobIntentService非推奨化対応:WorkManagerの実装
+ *
  */
 import android.content.Context;
-import android.content.Intent;
 import android.media.AudioAttributes;
 import android.media.SoundPool;
 import android.util.Log;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.app.JobIntentService;
+import androidx.work.Worker;
+import androidx.work.WorkerParameters;
 
 import com.example.androidsample.R;
 
-public class ServiceSampe0302TestService extends JobIntentService {
+public class ServiceSampe0302TestService extends Worker {
 
-    static final int JOB_ID = 1002;
 
-    private SoundPool soundPool;
-    private int soundOne;
+    private final SoundPool soundPool;
+    private final int soundOne;
     private boolean loadFlg = false;
 
-    static void enqueueWork(Context context, Intent work) {
-        Log.d("debug", "enqueueWork");
-        enqueueWork(context, ServiceSampe0302TestService.class, JOB_ID, work);
-    }
+    public ServiceSampe0302TestService(
+            @NonNull Context context, @NonNull WorkerParameters workerParams) {
+        super(context, workerParams);
 
-    @Override
-    public void onCreate() {
-        super.onCreate();
-        Log.d("debug", "onCreate");
+        Log.d("debug", "instance new called.");
         AudioAttributes attributes = new AudioAttributes.Builder()
                 .setUsage(AudioAttributes.USAGE_GAME)
                 .setContentType(AudioAttributes.CONTENT_TYPE_SPEECH)
@@ -46,7 +44,7 @@ public class ServiceSampe0302TestService extends JobIntentService {
         // 再生音楽をCreate時点でロードしておく
         // 思い出の浜辺 (c)Music-Note.jp
         this.soundOne = this.soundPool.load(
-                this, R.raw.omoidenohamabe, 1);
+                getApplicationContext(), R.raw.omoidenohamabe, 1);
         // ロードが終わったかどうかを判定するリスナー
         this.soundPool.setOnLoadCompleteListener((soundPool1, sampleId, status) -> {
             // status=0でロード完了
@@ -56,40 +54,35 @@ public class ServiceSampe0302TestService extends JobIntentService {
         });
     }
 
+    @NonNull
     @Override
-    public int onStartCommand(@Nullable Intent intent, int flags, int startId) {
-        Log.d("debug", "onStartCommand");
-        return super.onStartCommand(intent, flags, startId);
-    }
-
-    @Override
-    protected void onHandleWork(@NonNull Intent intent) {
-        Log.d("debug", "onHandleWork start");
+    public Result doWork() {
+        Log.d("debug", "doWork start");
         int count = 1;
         try {
             // ロードが終わるまで時間を潰す
             do {
                 // ビジー状態の警告は無視する
-                Thread.sleep(70);
+                Thread.sleep(500);
                 Log.d("debug", "sleep: " + count);
                 count++;
-            } while(!this.loadFlg);
+            } while(!this.loadFlg && count < 200);
 
-            Log.d("debug", "soundPool start");
-            //　再生
-            this.soundPool.play(this.soundOne, 1.0f, 1.0f, 0, 0, 1);
-            Log.d("debug", "soundPool end");
+            if(this.loadFlg) {
+                Log.d("debug", "soundPool start");
+                //　再生
+                this.soundPool.play(this.soundOne, 1.0f, 1.0f, 0, 0, 1);
+                Log.d("debug", "soundPool end");
+            } else {
+                Log.d("debug", "soundPool download time out");
+            }
         } catch (InterruptedException ex) {
             Log.d("debug", "InterruptedException");
             // このスレッドを止める
             Thread.currentThread().interrupt();
+            return Result.failure();
         }
-        Log.d("debug", "onHandleWork end");
-    }
-
-    @Override
-    public void onDestroy() {
-        super.onDestroy();
-        Log.d("debug", "onDestroy");
+        Log.d("debug", "doWork end");
+        return Result.success();
     }
 }

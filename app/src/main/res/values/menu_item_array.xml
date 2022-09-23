@@ -98,8 +98,8 @@
         <item>9.画面遷移(Fragment⇔Fragment)貼り付け部分の通知版</item>
         <item>10.Serviceの使い方</item>
         <item>11.WindowManagerを使ってServiceから画像を表示させ続ける</item>
-        <item>12.JobIntentServiceを使った(簡単な)バックグラウンド処理</item>
-        <item>13.JobIntentServiceを使ってバックグラウンドでゲーム効果音を再生</item>
+        <item>12.WorkManagerを使った(簡単な)バックグラウンド処理</item>
+        <item>13.WorkManagerを使ってバックグラウンドでゲーム効果音を再生</item>
     </string-array>
 
     <string-array name="list_menu">

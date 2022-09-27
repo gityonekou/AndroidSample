@@ -1,4 +1,3 @@
-package com.example.androidsample.app;
 /*
  * 複数のFragment間の画面遷移
  *
@@ -38,6 +37,8 @@ package com.example.androidsample.app;
  * インスタンスが帰る(nullになることはない)のでif文によるnull判定は不要です
  *
  */
+package com.example.androidsample.app;
+
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;

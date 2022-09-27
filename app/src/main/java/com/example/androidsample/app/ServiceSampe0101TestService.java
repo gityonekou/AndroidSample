@@ -1,4 +1,3 @@
-package com.example.androidsample.app;
 /*
  * ServiceSampe0101で開始されるサービスです。
  * MediaPlayerを使ってmp3を再生します。
@@ -12,6 +11,8 @@ package com.example.androidsample.app;
  * をアクティブにするなど、サービスから呼び出し元のActivityに通知を出す方法を実装する必要があります。
  * 今回のサンプルではその部分は未コーディング状態です。
  */
+package com.example.androidsample.app;
+
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;

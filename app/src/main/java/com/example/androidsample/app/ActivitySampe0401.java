@@ -1,4 +1,3 @@
-package com.example.androidsample.app;
 /*
  * Activity のライフサイクルと画面の回転
  *
@@ -39,6 +38,8 @@ package com.example.androidsample.app;
  *
  *
  */
+package com.example.androidsample.app;
+
 import android.os.Bundle;
 import android.util.Log;
 

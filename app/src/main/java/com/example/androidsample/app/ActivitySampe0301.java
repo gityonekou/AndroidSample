@@ -1,4 +1,3 @@
-package com.example.androidsample.app;
 /*
  * グローバル変数(アプリケーション内の共有データ)を使ってActivity間でデータを渡す
  * mainとsubのライフサイクル確認
@@ -22,6 +21,8 @@ package com.example.androidsample.app;
  * このサンプルではMainアクティビティとSubアクティビティのライフサイクルも追加で確認します。
  *
  */
+package com.example.androidsample.app;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;

@@ -1,4 +1,3 @@
-package com.example.androidsample.app;
 /*
  * IntentService⇒WorkManagerでバックグラウンド処理を簡単に実行させる
  *
@@ -12,6 +11,8 @@ package com.example.androidsample.app;
  * SoundPool.OnLoadCompleteListener
  *
  */
+package com.example.androidsample.app;
+
 import android.os.Bundle;
 import android.widget.Button;
 

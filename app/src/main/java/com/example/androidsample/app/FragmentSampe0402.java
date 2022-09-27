@@ -1,4 +1,3 @@
-package com.example.androidsample.app;
 /*
  * 複数のFragment間の画面遷移(貼り付け部分の通知版)
  *
@@ -11,6 +10,8 @@ package com.example.androidsample.app;
  * が主に使われているよう。。。サンプルにはなさそうなので頑張って作るしかない。。
  *
  */
+package com.example.androidsample.app;
+
 import android.os.Bundle;
 import android.util.Log;
 

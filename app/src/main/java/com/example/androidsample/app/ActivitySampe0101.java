@@ -1,4 +1,3 @@
-package com.example.androidsample.app;
 /*
  * Activityの画面遷移
  * アプリの画面を遷移させる
@@ -47,6 +46,8 @@ package com.example.androidsample.app;
  *　finish();
  *
  */
+package com.example.androidsample.app;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;

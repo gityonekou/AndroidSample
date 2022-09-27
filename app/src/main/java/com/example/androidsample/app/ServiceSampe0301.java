@@ -1,4 +1,3 @@
-package com.example.androidsample.app;
 /*
  * IntentService(JobIntentService)⇒WorkManagerでバックグラウンド処理を簡単に実行させる
  *
@@ -43,6 +42,8 @@ package com.example.androidsample.app;
  *
  *
  */
+package com.example.androidsample.app;
+
 import android.os.Bundle;
 import android.widget.Button;
 

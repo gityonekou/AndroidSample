@@ -1,4 +1,3 @@
-package com.example.androidsample.app;
 /*
  * WindowManagerを使ってServiceから画像を表示させ続ける
  *
@@ -48,6 +47,8 @@ package com.example.androidsample.app;
  *
  *
  */
+package com.example.androidsample.app;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;

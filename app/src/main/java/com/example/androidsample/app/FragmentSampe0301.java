@@ -1,4 +1,3 @@
-package com.example.androidsample.app;
 /*
  * ActivityとFragmentの画面遷移
  *
@@ -33,6 +32,8 @@ package com.example.androidsample.app;
  * アプリの戻るボタン[左下の◀ボタン]押下時はonBackPressed()メソッドをオーバーライドして実装します。
  *
  */
+package com.example.androidsample.app;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;

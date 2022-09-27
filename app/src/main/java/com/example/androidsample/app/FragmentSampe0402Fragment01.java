@@ -1,8 +1,5 @@
 package com.example.androidsample.app;
-/*
- * Fragmentサンプルを表示するフラグメント01です。サンプル0402にて呼び出されます。
- * 詳細はFragmentSampe0401を参照のこと
- */
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.LayoutInflater;

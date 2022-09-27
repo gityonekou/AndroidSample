@@ -1,4 +1,3 @@
-package com.example.androidsample.app;
 /*
  * Fragmentを「Hello World」から始める
  *
@@ -24,6 +23,8 @@ package com.example.androidsample.app;
  * <fragment>のname属性は「パッケージ名 + Fragmentクラス名」となるようにします。
  *
  */
+package com.example.androidsample.app;
+
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;

@@ -1,4 +1,3 @@
-package com.example.androidsample.app;
 /*
  * Serviceの使い方
  *
@@ -37,6 +36,8 @@ package com.example.androidsample.app;
  * を呼び出します。これでステータスバーにはアイコンが表示されてForgroundにいるかのようになるということでしょう。
  *
  */
+package com.example.androidsample.app;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;

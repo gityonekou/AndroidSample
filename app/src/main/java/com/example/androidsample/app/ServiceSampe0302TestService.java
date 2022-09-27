@@ -28,7 +28,6 @@ import com.example.androidsample.R;
  */
 public class ServiceSampe0302TestService extends Worker {
 
-
     private final SoundPool soundPool;
     private final int soundOne;
     private boolean loadFlg = false;

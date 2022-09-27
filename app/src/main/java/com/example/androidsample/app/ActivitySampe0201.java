@@ -1,4 +1,3 @@
-package com.example.androidsample.app;
 /*
  * Activity(main⇔sub)間のデータ受け渡し
  *
@@ -89,6 +88,8 @@ package com.example.androidsample.app;
  *});
  *
  */
+package com.example.androidsample.app;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

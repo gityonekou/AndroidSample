@@ -1,4 +1,3 @@
-package com.example.androidsample.app;
 /*
  * Fragmentをjavaコードだけで記述する(いつものやつです)
  *
@@ -32,6 +31,8 @@ package com.example.androidsample.app;
  *追加、削除、置換などのメソッドが用意されています。
  *
  */
+package com.example.androidsample.app;
+
 import android.os.Bundle;
 import android.util.Log;
 

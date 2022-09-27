@@ -1,12 +1,5 @@
 package com.example.androidsample.common;
-/*
- * メッセージに対してOK、キャンセルの選択を行うダイアログです。
- *
- * 呼び出し元にて以下のキーに対応する値をBundleで設定してください。
- * TITLE_KEY:このダイアログで表示するタイトル
- * MESSAGE_KEY:このダイアログで表示するメッセージ
- *
- */
+
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -18,6 +11,19 @@ import androidx.fragment.app.DialogFragment;
 
 import com.example.androidsample.R;
 
+/**
+ * メッセージに対してOK、キャンセルの選択を行うダイアログです。
+ *
+ * 呼び出し元にて以下のキーに対応する値をBundleで設定してください。
+ * TITLE_KEY:このダイアログで表示するタイトル
+ * MESSAGE_KEY:このダイアログで表示するメッセージ
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class OkCancelDialog extends DialogFragment {
 
     public static final String TITLE_KEY = "title_key";

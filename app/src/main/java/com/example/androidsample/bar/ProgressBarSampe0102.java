@@ -1,4 +1,3 @@
-package com.example.androidsample.bar;
 /*
  * ProgressBarの表示/非表示と進捗状況の表示
  * 　対象URL：https://akira-watson.com/android/progressbar.html
@@ -19,6 +18,8 @@ package com.example.androidsample.bar;
  * また進捗はメソッドの「setProgress()」を使います。
  *
  */
+package com.example.androidsample.bar;
+
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ProgressBar;
@@ -28,6 +29,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * ProgressBarのサンプル02
+ * 「2.ProgressBarの表示/非表示と進捗状況の表示」に対応するアクティビティです。
+ *
+ * プログレスバーの表示、非表示の切り替えと進捗状況の表示のサンプルを一つにまとめました。
+ *
+ * 対象URL：https://akira-watson.com/android/progressbar.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ProgressBarSampe0102 extends AppCompatActivity {
 
     private ProgressBar bar1;

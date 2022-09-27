@@ -1,4 +1,3 @@
-package com.example.androidsample.bar;
 /*
  * SeekBarでボリューム入力
  * 　対象URL：https://akira-watson.com/android/seekbar.html
@@ -22,6 +21,8 @@ package com.example.androidsample.bar;
  * }
  *
  */
+package com.example.androidsample.bar;
+
 import android.os.Bundle;
 import android.widget.SeekBar;
 import android.widget.TextView;
@@ -33,6 +34,18 @@ import com.example.androidsample.R;
 
 import java.util.Locale;
 
+/**
+ * SeekBarサンプル01
+ * 「3.SeekBarでボリューム入力」に対応するアクティビティです。
+ *
+ * 対象URL：https://akira-watson.com/android/seekbar.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class SeekBarSampe0101 extends AppCompatActivity {
 
     private TextView textView;

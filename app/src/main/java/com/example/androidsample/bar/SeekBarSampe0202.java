@@ -1,20 +1,6 @@
 package com.example.androidsample.bar;
-/*
- * [SeekBar]SeekBarのツマミ(thumb)とprogress(progress bar)のカスタマイズのコード版です。
- * 　対象URL：https://akira-watson.com/android/seekbar.html
- *
- * SeekBarの以下3点をカスタマイズしています。
- * 1. 背景色の変更
- * 2. ツマミを画像に変更(ドロイド君に変更)
- * 3. shapeを使ってツマミ(thumb)とprogress barのカスタマイズ
- *
- * このサンプルではレイアウトをすべてコードで記述しています。
- * 【このサンプルの重要点】
- * shape、ドロイド君などxmlからDrowableを生成する方法がポイントです。
- *
- */
+
 import android.graphics.Color;
-import android.graphics.drawable.Drawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.graphics.drawable.shapes.OvalShape;
 import android.os.Bundle;
@@ -33,6 +19,26 @@ import com.example.androidsample.R;
 
 import java.util.Locale;
 
+/**
+ * SeekBarサンプル03
+ * 「5.SeekBarのツマミ(thumb)とprogress(bar)のカスタマイズのコード版」に対応するアクティビティです。
+ *
+ * 対象URL：https://akira-watson.com/android/seekbar.html
+ *
+ * SeekBarの以下3点をカスタマイズしています。
+ * 1. 背景色の変更
+ * 2. ツマミを画像に変更(ドロイド君に変更)
+ * 3. shapeを使ってツマミ(thumb)とprogress barのカスタマイズ
+ *
+ * このサンプルではレイアウトはレイアウトファイルにて定義しています。
+ * 【このサンプルの重要点】
+ * shape、ドロイド君などxmlからDrowableを生成する方法がポイントです。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ */
 public class SeekBarSampe0202 extends AppCompatActivity {
 
     private TextView textView;

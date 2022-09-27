@@ -1,3 +1,11 @@
+/*
+ * レイアウトをjavaコードで動的に変更します。
+ * 対象URL：https://akira-watson.com/android/button-hardcoding.html
+ *
+ * RelativeLayout(リラティブレイアウト)サンプルです。
+ * 画面構成はサンプル01と同じなので、同じString ID、各種キーをそのまま使用します。
+ *
+ */
 package com.example.androidsample.button;
 
 import android.graphics.Color;
@@ -12,12 +20,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
-/*
- * レイアウトをjavaコードで動的に変更します。
+/**
+ * Buttonサンプル04
+ * 「4. レイアウトをJavaコードだけで設定する(RelativeLayout ver)」に対応するアクティビティです。
+ *
  * 対象URL：https://akira-watson.com/android/button-hardcoding.html
  *
- * RelativeLayout(リラティブレイアウト)サンプルです。
- * 画面構成はサンプル01と同じなので、同じString ID、各種キーをそのまま使用します。
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
  *
  */
 public class ButtonSampe0203 extends AppCompatActivity {

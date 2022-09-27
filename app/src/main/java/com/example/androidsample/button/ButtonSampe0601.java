@@ -1,5 +1,3 @@
-package com.example.androidsample.button;
-
 /*
  *　Button 配列を設定する。
  * 対象URL：https://akira-watson.com/android/button-array.html
@@ -9,6 +7,7 @@ package com.example.androidsample.button;
  * 作りましょう。
  *
  */
+package com.example.androidsample.button;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -24,6 +23,18 @@ import com.example.androidsample.R;
 
 import java.util.Locale;
 
+/**
+ * Button 配列を設定する。
+ * 「11. Button 配列を設定する(ViewにTagでマーキングする)」に対応するアクティビティです。
+ *
+ * 対象URL：https://akira-watson.com/android/button-array.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ButtonSampe0601 extends AppCompatActivity {
 
     private TextView textView;

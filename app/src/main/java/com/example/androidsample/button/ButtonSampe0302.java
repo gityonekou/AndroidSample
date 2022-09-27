@@ -1,5 +1,3 @@
-package com.example.androidsample.button;
-
 /*
  * shapeを使ってカスタムボタンを作成します。
  * レイアウトの設定はxmlになります。
@@ -10,6 +8,7 @@ package com.example.androidsample.button;
  * 円や四角形など単純なものはshapeを使ったほうがメモリ使用量が少なくなります。
  *
  */
+package com.example.androidsample.button;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -20,6 +19,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * shape(シェイプ)サンプル02
+ * 「6. shape(シェイプ)を使ってカスタムボタンを作る」に対応するアクティビティです。
+ *
+ * 対象URL：https://akira-watson.com/android/custom-button.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ButtonSampe0302 extends AppCompatActivity {
 
     private TextView textView;

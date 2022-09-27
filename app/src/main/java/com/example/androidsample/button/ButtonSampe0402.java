@@ -1,14 +1,5 @@
 package com.example.androidsample.button;
 
-/*
- * レイアウトをJavaコードで設定しImageButton に画像を設定します。
- * 対象URL：https://akira-watson.com/android/imagebutton.html
- *
- * 表示する画像は「res\drawable\ 」以下に配置します。
- * 画像の設定には、「background」に指定する方法と「src」に指定する方法があります。
- *
- */
-
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -27,6 +18,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * ImageButtonサンプル02、03
+ * 「8. ImageButton に画像を設定する(Javaコードで設定(android:src))」
+ * 「9. ImageButton に画像を設定する(Javaコードで設定(android:background))」に対応するアクティビティです。
+ *
+ * 8.9の切り替えは呼び出し元にてフラグ[key]の値をIntentに設定することにより行います。
+ *
+ * 対象URL：https://akira-watson.com/android/imagebutton.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ButtonSampe0402 extends AppCompatActivity {
 
     public static final String TYPE = "key";
@@ -34,7 +40,7 @@ public class ButtonSampe0402 extends AppCompatActivity {
     public static final String TYPE_BACKGROUND = "background";
 
     private boolean flg = true;
-    TextView textView;
+    private TextView textView;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -1,5 +1,3 @@
-package com.example.androidsample.button;
-
 /*
  *　リスナの設定には無名(匿名)クラスを使ってきましたが、その他にもいろいろな方法があります。
  * 対象URL：https://akira-watson.com/android/button-onclicklistener.html
@@ -13,6 +11,7 @@ package com.example.androidsample.button;
  *  public void 呼び出しメソッド(View view)
  *
  */
+package com.example.androidsample.button;
 
 import android.os.Bundle;
 import android.util.Log;
@@ -27,6 +26,18 @@ import com.example.androidsample.R;
 
 import java.util.Locale;
 
+/**
+ * onClickListenerの色々な設定
+ * 「10. onClickListenerの色々な設定」に対応するアクティビティです。
+ *
+ * 対象URL：https://akira-watson.com/android/button-onclicklistener.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ButtonSampe0501 extends AppCompatActivity implements View.OnClickListener{
 
     private TextView textView;

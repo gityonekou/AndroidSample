@@ -1,3 +1,14 @@
+/*
+ * 「簡単なButtonアプリを作る」のサンプルをレイアウトファイル「layout.activity_button_sample0101.xml」を使わずに
+ * javaコードだけで設定します。
+ * レイアウトをコードだけで記述することで例えば、ボタンの位置や大きさを自由に「動的」に変えることができます。
+ * 対象URL：https://akira-watson.com/android/button-hardcoding.html
+ *
+ * LinearLayout(リニアレイアウト)サンプル(ver2)です。このサンプルではレイアウト中央寄せ、
+ * ボタンの位置を動的に変更します。
+ * 画面構成はサンプル01と同じなので、同じString ID、各種キーをそのまま使用します。
+ *
+ */
 package com.example.androidsample.button;
 
 import android.graphics.Color;
@@ -13,15 +24,16 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
-/*
- * 「簡単なButtonアプリを作る」のサンプルをレイアウトファイル「layout.activity_button_sample0101.xml」を使わずに
- * javaコードだけで設定します。
- * レイアウトをコードだけで記述することで例えば、ボタンの位置や大きさを自由に「動的」に変えることができます。
+/**
+ * Buttonサンプル03
+ * 「3. レイアウトをJavaコードだけで設定する(LinearLayout ver2)」に対応するアクティビティです。
+ *
  * 対象URL：https://akira-watson.com/android/button-hardcoding.html
  *
- * LinearLayout(リニアレイアウト)サンプル(ver2)です。このサンプルではレイアウト中央寄せ、
- * ボタンの位置を動的に変更します。
- * 画面構成はサンプル01と同じなので、同じString ID、各種キーをそのまま使用します。
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
  *
  */
 public class ButtonSampe0202 extends AppCompatActivity {

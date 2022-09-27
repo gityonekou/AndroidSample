@@ -1,10 +1,5 @@
 package com.example.androidsample.button;
-/*
- * 「簡単な Button アプリを作る」のButtonアプリサンプル01です。
- * 　対象URL：https://akira-watson.com/android/button.html
- *　今回のサンプルはActivityは一つなので最後のレイアウトで一つにまとめています。
- *
- */
+
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -14,6 +9,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * Buttonサンプル01
+ * 「1. 簡単な Button アプリを作る」に対応するアクティビティです。
+ *
+ * 今回のサンプルはActivityは一つなので最後のレイアウトで一つにまとめています。
+ *
+ * 対象URL：https://akira-watson.com/android/button.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ButtonSampe0101 extends AppCompatActivity {
     private TextView textView;
     private boolean buttonTap = false;

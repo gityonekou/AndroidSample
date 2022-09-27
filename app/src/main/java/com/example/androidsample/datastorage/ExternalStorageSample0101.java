@@ -1,4 +1,3 @@
-package com.example.androidsample.datastorage;
 /*
  * アプリ固有の外部ストレージ(External Storage)にファイルを保存する
  * 　対象URL：https://akira-watson.com/android/external-storage-image.html
@@ -27,12 +26,10 @@ package com.example.androidsample.datastorage;
  * ・・・・
  * ↑外部ストレージに同様のディレクトリがあると思います。対応するディレクトリ名を選びます
  *
- * ------------------------
- * 【サンプルについて】
- * ボタン押下でアセットにある画像を外部ストレージに保存します。
- * 外部ストレージに保存した画像を表示するボタンも追加します。
  *
  */
+package com.example.androidsample.datastorage;
+
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
@@ -55,6 +52,22 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
+/**
+ * アプリ固有の外部ストレージ(External Storage)にファイルを保存する
+ * 「3.ファイルの入出力(アプリ固有の外部ストレージ)」に対応するアクティビティです。
+ *
+ * 対象URL：https://akira-watson.com/android/external-storage-image.html
+ *
+ * 【サンプルについて】
+ * ボタン押下でアセットにある画像を外部ストレージに保存します。
+ * 外部ストレージに保存した画像を表示するボタンも追加します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ExternalStorageSample0101 extends AppCompatActivity {
     // 保存するファイル名
     private static final String FILE_NAME="externalstorage_sample0101.jpg";

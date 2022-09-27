@@ -1,4 +1,3 @@
-package com.example.androidsample.datastorage;
 /*
  * (SAF：Storage Access Framework)でドキュメントを保存する
  * 　対象URL：https://akira-watson.com/android/action_create_document.html
@@ -15,6 +14,8 @@ package com.example.androidsample.datastorage;
  * こちらのサンプルでは下に表示した画像をSAFを解して指定した保存先に出力します。
  *
  */
+package com.example.androidsample.datastorage;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.content.res.AssetManager;
@@ -37,11 +38,25 @@ import com.example.androidsample.common.InfoMessageDialog;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Locale;
 
+/**
+ * (SAF：Storage Access Framework)でドキュメントを保存する
+ * 「8.SAF(Storage Access Framework)でイメージファイルを保存する」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/action_create_document.html
+ *
+ *【サンプルについて】
+ * こちらのサンプルでは下に表示した画像をSAFを解して指定した保存先に出力します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class StorageAccessFrameworkSample0202 extends AppCompatActivity {
 
     private static final String OPEN_ASSET_FILE = "rizero_image/rizero2.jpg";

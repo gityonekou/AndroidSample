@@ -1,8 +1,5 @@
 package com.example.androidsample.datastorage;
-/*
- * SQLiteSample0101で使用するDBアクセスのHelperクラスです。
- *
- */
+
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -10,6 +7,15 @@ import android.util.Log;
 
 import androidx.annotation.Nullable;
 
+/**
+ * SQLiteSample0101で使用するDBアクセスのHelperクラスです。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class SQLiteSample0101OpenHelper extends SQLiteOpenHelper {
 
     // データベースのバージョン

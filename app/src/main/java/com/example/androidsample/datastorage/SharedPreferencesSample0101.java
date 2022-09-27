@@ -1,4 +1,3 @@
-package com.example.androidsample.datastorage;
 /*
  * アプリ設定要データをSharedPreferencesで保存・参照する
  * 　対象URL：https://akira-watson.com/android/sharedpreferences.html
@@ -50,10 +49,9 @@ package com.example.androidsample.datastorage;
  * ・MODE_APPEND：上記で追記モードで開きたい場合はこちらを使用(前の値に追加で値を追加)
  * ・MODE_MULTI_PROCESS/こちらはAndroid6.0で非推奨のため使用不可/
  *
- *【サンプルについて】
- * 入力したテキストを保存ボタン押下時キー:"input"で保存し、読込ボタン押下でファイルを読み込んで表示します
- *
  */
+package com.example.androidsample.datastorage;
+
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.widget.Button;
@@ -65,6 +63,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * アプリ設定要データをSharedPreferencesで保存・参照する
+ * 「9.アプリ設定データの保存(SharedPreferences)」に対応するアクティビティです。
+ *
+ * 対象URL：https://akira-watson.com/android/sharedpreferences.html
+ *
+ *【サンプルについて】
+ * 入力したテキストを保存ボタン押下時キー:"input"で保存し、読込ボタン押下でファイルを読み込んで表示します
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class SharedPreferencesSample0101 extends AppCompatActivity {
 
     private EditText editText;

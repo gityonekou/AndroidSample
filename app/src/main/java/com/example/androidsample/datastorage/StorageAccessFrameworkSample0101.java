@@ -1,4 +1,3 @@
-package com.example.androidsample.datastorage;
 /*
  * (SAF：Storage Access Framework)でフォトアプリから画像を取り出す
  * 　対象URL：https://akira-watson.com/android/gallery.html
@@ -56,10 +55,10 @@ package com.example.androidsample.datastorage;
  * FileDescriptor:ファイル記述子クラスのインスタンスは、開いたファイル、開いたソケット、またはバイトの別の
  * ソース(シンク)を表す、ベースとなるマシン固有の構造への不透明なハンドルとして機能します。
  *
- *【サンプルについて】
- * フォトにある画像を読みだして表示させるプログラムです。
  *
  */
+package com.example.androidsample.datastorage;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -83,6 +82,21 @@ import java.io.FileDescriptor;
 import java.io.IOException;
 import java.util.Locale;
 
+/**
+ * (SAF：Storage Access Framework)でフォトアプリから画像を取り出す
+ * 「6.SAF(Storage Access Framework)でフォトアプリから画像を取り出す」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/gallery.html
+ *
+ *【サンプルについて】
+ * フォトにある画像を読みだして表示させるプログラムです。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class StorageAccessFrameworkSample0101 extends AppCompatActivity {
 
     private TextView textView;

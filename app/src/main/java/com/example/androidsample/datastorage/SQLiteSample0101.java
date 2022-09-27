@@ -1,4 +1,3 @@
-package com.example.androidsample.datastorage;
 /*
  * SQLite(データベース)の簡単なサンプル
  * 　対象URL：https://akira-watson.com/android/sqlite.html
@@ -42,10 +41,9 @@ package com.example.androidsample.datastorage;
  * テーブルの作成方法、ドロップ方法、Insert/更新方法は以下サンプルかにゃんホームページ、デベロッパーガイドにて
  * 確認とします。(長くなるので。。
  *
- *【サンプルについて】
- * 入力した銘柄、株価を保存ボタンでデータベースに登録します。
- *
  */
+package com.example.androidsample.datastorage;
+
 import android.content.ContentValues;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
@@ -59,6 +57,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * SQLite(データベース)の簡単なサンプル
+ * 「10.SQLite(データベース)の簡単なサンプル」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/sqlite.html
+ * 　対象URL：https://developer.android.com/training/data-storage/sqlite?hl=ja#java
+ *
+ *【サンプルについて】
+ * 入力した銘柄、株価を保存ボタンでデータベースに登録します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class SQLiteSample0101 extends AppCompatActivity {
 
     private TextView textView;

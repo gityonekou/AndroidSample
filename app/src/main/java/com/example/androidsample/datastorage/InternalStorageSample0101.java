@@ -1,4 +1,3 @@
-package com.example.androidsample.datastorage;
 /*
  * アプリ固有の内部ストレージ(Internal Storage)にファイルを保存する
  * 　対象URL：https://akira-watson.com/android/fileoutputstream.html
@@ -19,14 +18,13 @@ package com.example.androidsample.datastorage;
  *
  * adb shell コマンドではセキュリティーでブロックされて見えませんが、run-as を使えばデバック状態であれば見ることはできます。
  *
- *【サンプルについて】
- * このサンプルではEditTextで入力した文字列をTestFile_0101.txt というファイルに入れて保存し、そのファイルを
- * ボタン押下で読み込みます。
- * ファイルの読み込みについて：
+ * [ファイルの読み込みについて]
  * FileReader単体で使うのではなくバッファリングされたBufferedReaderを使うこと
  * FileReaderは1文字ずつの読み込みのため読み込みについては非効率です。
  *
  */
+package com.example.androidsample.datastorage;
+
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
@@ -45,6 +43,22 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 
+/**
+ * アプリ固有の内部ストレージ(Internal Storage)にファイルを保存する
+ * 「1.ファイルの入出力(アプリ固有の内部ストレージとgetFilesDir)」に対応するアクティビティです。
+ *
+ * 対象URL：https://akira-watson.com/android/fileoutputstream.html
+ *
+ *【サンプルについて】
+ * このサンプルではEditTextで入力した文字列をTestFile_0101.txt というファイルに入れて保存し、そのファイルを
+ * ボタン押下で読み込みます。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class InternalStorageSample0101 extends AppCompatActivity {
 
     private static final String FILE_NAME="internal_storage_sample0101.txt";

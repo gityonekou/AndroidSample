@@ -1,4 +1,3 @@
-package com.example.androidsample.datastorage;
 /*
  * パブリックな共有ストレージ(メディアコレクション：MediaStore)に画像を保存する
  * 　対象URL：https://akira-watson.com/android/mediastore-save.html
@@ -49,11 +48,10 @@ package com.example.androidsample.datastorage;
  *          android:maxSdkVersion="28" />
  * APIレベル28以下の場合のコードを追加；詳しくは以下コードを参照
  * ------------------------
- * 【サンプルについて】
- * ボタン押下でdrawableに入れた画像をMediaStoreに保存します。
- * drawableの画像データからInputStreamを取得する方法もコーディングします。
  *
  */
+package com.example.androidsample.datastorage;
+
 import android.Manifest;
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -79,6 +77,22 @@ import com.example.androidsample.R;
 import java.io.IOException;
 import java.io.OutputStream;
 
+/**
+ * パブリックな共有ストレージ(メディアコレクション：MediaStore)に画像を保存する
+ * 「4.MediaStore：ファイル出力」に対応するアクティビティです。
+ *
+ * 対象URL：https://akira-watson.com/android/mediastore-save.html
+ *
+ *【サンプルについて】
+ * ボタン押下でdrawableに入れた画像をMediaStoreに保存します。
+ * drawableの画像データからInputStreamを取得する方法もコーディングします。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class MediaStoreSample0101 extends AppCompatActivity {
 
     private static final String FILE_NAME = "MediaStoreSample0101.jpg";

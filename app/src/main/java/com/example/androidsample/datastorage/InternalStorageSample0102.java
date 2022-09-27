@@ -1,12 +1,9 @@
-package com.example.androidsample.datastorage;
 /*
  * アプリ固有の内部ストレージ(Internal Storage)にファイルを保存する
  * 　対象URL：https://akira-watson.com/android/fileoutputstream.html
  *
  * 内部ストレージの解説についてはサンプル0101を参照ください。
  *
- *【サンプルについて】
- * サンプルの仕様についても0101と同じです。
  * ファイルの入出力について
  * Context#openFileInputメソッド、openFileOutputメソッドを使い直接StreamをContextから受け取るタイプです。
  * また、サンプル0101同様にバッファリングされたI/Oを使うことが重要です。
@@ -24,6 +21,8 @@ package com.example.androidsample.datastorage;
  * FileInputStreamはBufferedI/Oにラップしてから出力する必要があります。
  *
  */
+package com.example.androidsample.datastorage;
+
 import android.content.Context;
 import android.os.Bundle;
 import android.widget.Button;
@@ -43,6 +42,21 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * アプリ固有の内部ストレージ(Internal Storage)にファイルを保存する
+ * 「2.ファイルの入出力(アプリ固有の内部ストレージとopenFileInput・Output)」に対応するアクティビティです。
+ *
+ * 対象URL：https://akira-watson.com/android/fileoutputstream.html
+ *
+ *【サンプルについて】
+ * サンプルの仕様についてはInternalStorageSample0101と同じです。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class InternalStorageSample0102 extends AppCompatActivity {
 
     private static final String FILE_NAME="internal_storage_sample0102.txt";

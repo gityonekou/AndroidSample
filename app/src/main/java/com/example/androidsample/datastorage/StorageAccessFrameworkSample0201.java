@@ -1,4 +1,3 @@
-package com.example.androidsample.datastorage;
 /*
  * (SAF：Storage Access Framework)でドキュメントを保存する
  * 　対象URL：https://akira-watson.com/android/action_create_document.html
@@ -11,10 +10,9 @@ package com.example.androidsample.datastorage;
  * SAFを介してドキュメントを保存する場合に指定するIntentのキーです。
  * 具体的な使用法は参照時と同じですのでStorageAccessFrameworkSample0101を参照してください。
  *
- *【サンプルについて】
- * テキストファイルに「Storage Access Framework sample0201」の文字列を入れてそれを保存してみます。
- *
  */
+package com.example.androidsample.datastorage;
+
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -36,6 +34,21 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.util.Locale;
 
+/**
+ * (SAF：Storage Access Framework)でドキュメントを保存する
+ * 「7.SAF(Storage Access Framework)でテキストファイルを保存する」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/action_create_document.html
+ *
+ *【サンプルについて】
+ * テキストファイルに「Storage Access Framework sample0201」の文字列を入れてそれを保存してみます。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class StorageAccessFrameworkSample0201 extends AppCompatActivity {
 
     private TextView textView;

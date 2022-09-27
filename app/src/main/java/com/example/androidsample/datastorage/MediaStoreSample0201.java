@@ -1,4 +1,3 @@
-package com.example.androidsample.datastorage;
 /*
  * パブリックな共有ストレージ(メディアコレクション：MediaStore)にあるスマホの画像や音楽ファイルを検索する
  * 　対象URL：https://akira-watson.com/android/mediastore.html
@@ -46,17 +45,9 @@ package com.example.androidsample.datastorage;
  * READ_EXTERNAL_STORAGE は Runtime Permission に該当するため、アプリ起動中に許可を得るように
  * コーディングが必要です。
  *
- *---------------------------------------
- * 【サンプル】
- * MediaStore内の画像ファイルを参照します。最初に読み出し許可の処理を行います。
- *
- * ※実際に検索結果のデータを表示するにはParcelFileDescriptorなどでストリームを開く必要があります。
- * 詳しくは「StorageAccessFrameworkSample0101」が参考になるかと。
- * ※上記サンプルではSAFでピッカーを表示して選択した画像を表示するサンプルとなるので１００％参考になるわけではない
- * が、ParcelFileDescriptorの使い方の参考にはなると思います。
- *
- *
  */
+package com.example.androidsample.datastorage;
+
 import android.Manifest;
 import android.annotation.SuppressLint;
 import android.content.ContentResolver;
@@ -75,6 +66,27 @@ import com.example.androidsample.R;
 
 import java.util.Locale;
 
+/**
+ * パブリックな共有ストレージ(メディアコレクション：MediaStore)にあるスマホの画像や音楽ファイルを検索する
+ * 「5.MediaStore：ファイル参照」に対応するアクティビティです。
+ *
+ * 対象URL：https://akira-watson.com/android/mediastore.html
+ *
+ *【サンプルについて】
+ * スマホ内で共有されるMediaStorageにアクセスして画像や音楽ファイルをContentProviderを使って参照するサンプルです。
+ * また、最初に読み出し許可の処理を行います。
+ *
+ * ※実際に検索結果のデータを表示するにはParcelFileDescriptorなどでストリームを開く必要があります。
+ * 詳しくは「StorageAccessFrameworkSample0101」が参考になるかと。
+ * ※上記サンプルではSAFでピッカーを表示して選択した画像を表示するサンプルとなるので１００％参考になるわけではない
+ * が、ParcelFileDescriptorの使い方の参考にはなると思います。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class MediaStoreSample0201 extends AppCompatActivity {
 
     private final ActivityResultLauncher<String> permissionLauncher = registerForActivityResult(

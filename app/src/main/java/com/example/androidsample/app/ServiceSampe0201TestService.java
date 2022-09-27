@@ -1,9 +1,5 @@
 package com.example.androidsample.app;
-/*
- * ServiceSampe0201で開始されるサービスです。
- * 画像をアプリレイア「TYPE_APPLICATION_OVERLAY」上で表示します。
- *
- */
+
 import android.app.Notification;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
@@ -24,6 +20,16 @@ import androidx.annotation.Nullable;
 
 import com.example.androidsample.R;
 
+/**
+ * ServiceSampe0201で開始されるサービスです。
+ * 画像をアプリレイア「TYPE_APPLICATION_OVERLAY」上で表示します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ServiceSampe0201TestService extends Service {
     private int dpScale;
     private View view;
@@ -85,7 +91,7 @@ public class ServiceSampe0201TestService extends Service {
         params.x = 20 * this.dpScale; // x=20dp
         params.y = 80 * this.dpScale; // y=80dp
         // レイアウトファイルからinflateするviewを作成
-        // rootviewがnullなことに警告が出るがここでは無視する
+        // TODO:rootviewがnullなことに警告が出るがここでは無視する
         this.view = inflater.inflate(R.layout.service_service_sample0201_layer, null);
         // 画像タッチ時サービスを終了する
         //CustomImageView image = view.findViewById(R.id.service_sample0201_imageview);

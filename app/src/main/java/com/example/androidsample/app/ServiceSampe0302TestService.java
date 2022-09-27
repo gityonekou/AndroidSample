@@ -1,15 +1,5 @@
 package com.example.androidsample.app;
-/*
- * IntentServiceはアンドロイド11から非推奨となり代わりにJoIntentServiceを使うようになりました。
- * 今サンプルではJobIntentServiceにてコードを書き換えています。
- *
- * ServiceSampe0302ではSoundPoolを使ってゲームの効果音の再生します。
- *
- *****
- *  ver2.00.00 更新
- * ・JobIntentService非推奨化対応:WorkManagerの実装
- *
- */
+
 import android.content.Context;
 import android.media.AudioAttributes;
 import android.media.SoundPool;
@@ -21,6 +11,21 @@ import androidx.work.WorkerParameters;
 
 import com.example.androidsample.R;
 
+/**
+ * IntentServiceはアンドロイド11から非推奨となり代わりにJoIntentServiceを使うようになりました。
+ * 今サンプルではJobIntentServiceにてコードを書き換えています。
+ *
+ * [処理内容]
+ * ServiceSampe0302ではSoundPoolを使ってゲームの効果音の再生します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 更新
+ * 1.Javadoc追加対応
+ * 2.JobIntentService非推奨化対応:Workerの実装
+ *
+ */
 public class ServiceSampe0302TestService extends Worker {
 
 

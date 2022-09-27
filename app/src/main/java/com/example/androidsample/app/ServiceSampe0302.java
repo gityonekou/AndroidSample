@@ -11,10 +11,6 @@ package com.example.androidsample.app;
  * ロードが終わったかどうかを調べるのには、リスナーをセットしてonLoadCompleteから返されるステータスが0の時です。
  * SoundPool.OnLoadCompleteListener
  *
- *****
- *  ver2.00.00 更新
- * ・JobIntentService非推奨化対応:WorkManagerの実装
- *
  */
 import android.os.Bundle;
 import android.widget.Button;
@@ -26,6 +22,24 @@ import androidx.work.WorkManager;
 
 import com.example.androidsample.R;
 
+/**
+ * IntentService⇒WorkManagerでバックグラウンド処理を簡単に実行させる
+ * 「13.WorkManagerを使ってバックグラウンドでゲーム効果音を再生」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/intentservice.html
+ *
+ * [処理内容]
+ * ServiceSampe0302ではSoundPoolを使ってゲームの効果音の再生を試してみます。
+ * WorkManagerについてはサンプルServiceSampe0301を参照ください。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 更新
+ * 1.Javadoc追加対応
+ * 2.JobIntentService非推奨化対応:WorkManagerの実装
+ *
+ */
 public class ServiceSampe0302 extends AppCompatActivity {
 
     // 実行中のワーカーを識別するためのタグ

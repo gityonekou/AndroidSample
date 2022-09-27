@@ -33,6 +33,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * アクティビティ遷移のサンプル03
+ * 「3.グローバル変数(アプリケーション内の共有データ)を参照する＋mainとsubのライフサイクル確認」に対応するアクティビティです。
+ *
+ * 　対象URL1：https://akira-watson.com/android/global-val.html
+ * 　対象URL2：https://akira-watson.com/android/orientation.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ */
 public class ActivitySampe0301 extends AppCompatActivity {
 
     private ActivitySampe0301AppData appData;

@@ -64,6 +64,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * WindowManagerを使ってServiceから画像を表示させ続ける
+ * 「11.WindowManagerを使ってServiceから画像を表示させ続ける」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/windowmanager.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ServiceSampe0201 extends AppCompatActivity {
 
     private final ActivityResultLauncher<Intent> resultLauncher = registerForActivityResult(

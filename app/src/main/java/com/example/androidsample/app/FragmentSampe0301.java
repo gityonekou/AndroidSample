@@ -45,6 +45,18 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.androidsample.R;
 
+/**
+ * アクティビティ⇔フラグメントの画面遷移
+ * 「7.画面遷移(Activity⇔Fragment)、戻る「◀」ボタン」に対応するアクティビティです。
+ *
+ * 対象URL：https://akira-watson.com/android/activity-fragment.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class FragmentSampe0301 extends AppCompatActivity {
 
     @Override

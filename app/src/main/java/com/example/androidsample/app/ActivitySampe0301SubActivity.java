@@ -1,13 +1,4 @@
 package com.example.androidsample.app;
-/*
- * グローバル変数(アプリケーション内の共有データ)を使ってActivity間でデータを渡す
- *
- * 　対象URL：https://akira-watson.com/android/global-val.html
- *
- *  ActivitySampe0301で呼び出されるサブアクティビティです。
- * MainActivityでグローバルに設定したデータを表示します。
- *
- */
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -18,6 +9,20 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * グローバル変数(アプリケーション内の共有データ)を使ってActivity間でデータを渡す
+ *
+ * 　対象URL：https://akira-watson.com/android/global-val.html
+ *
+ *  ActivitySampe0301で呼び出されるサブアクティビティです。
+ * MainActivityでグローバルに設定したデータを表示します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ActivitySampe0301SubActivity extends AppCompatActivity {
 
     private TextView textView;

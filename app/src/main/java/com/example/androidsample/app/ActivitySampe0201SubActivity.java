@@ -1,10 +1,4 @@
 package com.example.androidsample.app;
-/*
- * Activityの画面遷移
- * ActivitySampe0201から遷移するサブActivityです。
- * returnボタン押下時にこのサブアクテビティを終了(finish()呼び出し)させます。
- * 詳細はActivitySampe0201を参照のこと
- */
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
@@ -16,6 +10,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * Activityの画面遷移
+ * ActivitySampe0201から遷移するサブActivityです。
+ * returnボタン押下時にこのサブアクテビティを終了(finish()呼び出し)させます。
+ * 詳細はActivitySampe0201を参照のこと
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ActivitySampe0201SubActivity extends AppCompatActivity {
 
     private String message;
@@ -42,9 +48,8 @@ public class ActivitySampe0201SubActivity extends AppCompatActivity {
             // 対応する値はResultに反映されたままとなる。(setResultで設定したIntentのインスタンスで
             // 値が塗り替えられるのではなく、値をaddする形になる点に注意
             if(this.editText.getText() != null) {
-                StringBuilder resultStr = new StringBuilder(this.message);
-                resultStr.append(this.editText.getText().toString());
-                intentSub.putExtra(ActivitySampe0201.EXTRA_MESSAGE, resultStr.toString());
+                intentSub.putExtra(ActivitySampe0201.EXTRA_MESSAGE,
+                        this.message + this.editText.getText().toString());
             }
             //edit textをクリアし終了
             this.editText.setText("");

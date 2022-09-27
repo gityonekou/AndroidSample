@@ -14,6 +14,16 @@ import androidx.fragment.app.Fragment;
 
 import com.example.androidsample.R;
 
+/**
+ * Fragmentサンプルを表示するフラグメント02です。サンプル0402にて呼び出されます。
+ * 詳細はFragmentSampe0401を参照のこと
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class FragmentSampe0402Fragment02 extends Fragment {
     private static final String KEY = "Counter";
     private static final String TITLE = "(通知版)Fragment02:";

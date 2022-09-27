@@ -28,6 +28,16 @@ import androidx.annotation.Nullable;
 
 import com.example.androidsample.R;
 
+/**
+ * ServiceSampe0101で開始されるサービスです。
+ * MediaPlayerを使ってmp3を再生します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ServiceSampe0101TestService extends Service {
 
     public static final String REQUEST_CODE = "REQUEST_CODE";

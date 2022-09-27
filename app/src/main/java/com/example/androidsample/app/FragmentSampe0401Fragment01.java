@@ -1,8 +1,5 @@
 package com.example.androidsample.app;
-/*
- * Fragmentサンプルを表示するフラグメント01です。サンプル0401にて呼び出されます。
- * 詳細はFragmentSampe0401を参照のこと
- */
+
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -18,6 +15,16 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.androidsample.R;
 
+/**
+ * Fragmentサンプルを表示するフラグメント01です。サンプル0401にて呼び出されます。
+ * 詳細はFragmentSampe0401を参照のこと
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class FragmentSampe0401Fragment01 extends Fragment {
     private static final String KEY = "Counter";
     private static final String TITLE = "Fragment01:";

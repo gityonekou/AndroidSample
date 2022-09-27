@@ -7,7 +7,7 @@ package com.example.androidsample.app;
  *
  * フラグメントの貼り付け部(FragmentManagerを呼び出し、トランザクションを生成、replace、commit部分を
  * フラグメントクラス内に記述するのではなくメインアクティビティに通知して処理を行うサンプルです。
- * イベントを通知して切り替えてもらう形のほうがフラグメントとしての独立性が保たれるのであとで現在の開発ではこちらの方法
+ * イベントを通知して切り替えてもらう形のほうがフラグメントとしての独立性が保たれるので現在の開発ではこちらの方法
  * が主に使われているよう。。。サンプルにはなさそうなので頑張って作るしかない。。
  *
  */
@@ -22,6 +22,18 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.androidsample.R;
 
+/**
+ * 複数のFragment間の画面遷移(貼り付け部分の通知版)
+ * 「9.画面遷移(Fragment⇔Fragment)貼り付け部分の通知版」に対応するアクティビティです。
+ *
+ * 　対象URL：https://araramistudio.jimdo.com/2018/03/01/
+ * 　上記ブログ一覧の右記事を参照：「AndroidでFragmentの結果をActivityで受け取る」
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ */
 public class FragmentSampe0402 extends AppCompatActivity
         implements FragmentSampe0402FragmentActionListener {
 

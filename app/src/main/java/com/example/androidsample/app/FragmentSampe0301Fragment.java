@@ -1,8 +1,5 @@
 package com.example.androidsample.app;
-/*
- * Fragmentサンプルを表示するフラグメントです。サンプル03にて呼び出されます。
- * 詳細はFragmentSampe0301を参照のこと
- */
+
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -15,6 +12,16 @@ import androidx.fragment.app.Fragment;
 
 import com.example.androidsample.R;
 
+/**
+ * Fragmentサンプルを表示するフラグメントです。サンプル03にて呼び出されます。
+ * 詳細はFragmentSampe0301を参照のこと
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class FragmentSampe0301Fragment extends Fragment {
 
     private static final String KEY = "Message";

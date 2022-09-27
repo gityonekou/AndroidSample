@@ -42,6 +42,18 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.androidsample.R;
 
+/**
+ * Fragmentのサンプル02
+ * 「6.Fragmentタグ部分をコードで動的に設定する」に対応するアクティビティです。
+ *
+ * 対象URL：https://akira-watson.com/android/fragment-code.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class FragmentSampe0201 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

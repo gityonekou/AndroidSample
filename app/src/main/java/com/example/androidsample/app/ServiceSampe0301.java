@@ -40,12 +40,7 @@ package com.example.androidsample.app;
  *      .setInitialDelay(10, TimeUnit.SECONDS) //10秒後に実行
  *      .build();
  * WorkManager.getInstance(getApplicationContext()).enqueue(workRequest);
- * ****
- * [処理内容]
- * ServiceSampe0301では1秒のスリープを入れて10回カウントしたら終了させる簡単なサンプルです
  *
- * ver2.00.00 更新
- * ・JobIntentService非推奨化対応:WorkManagerの実装
  *
  */
 import android.os.Bundle;
@@ -60,6 +55,23 @@ import com.example.androidsample.R;
 
 import java.util.concurrent.TimeUnit;
 
+/**
+ * IntentService(JobIntentService)⇒WorkManagerでバックグラウンド処理を簡単に実行させる
+ * 「12.WorkManagerを使った(簡単な)バックグラウンド処理」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/intentservice.html
+ *
+ * [処理内容]
+ *  ServiceSampe0301では1秒のスリープを入れて10回カウントしたら終了させる簡単なサンプルです
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 更新
+ * 1.Javadoc追加対応
+ * 2.JobIntentService非推奨化対応:WorkManagerの実装
+ *
+ */
 public class ServiceSampe0301 extends AppCompatActivity {
 
     // 実行中のワーカーを識別するためのタグ

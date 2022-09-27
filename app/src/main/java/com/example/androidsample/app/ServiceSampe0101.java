@@ -46,6 +46,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * Serviceの使い方
+ * 「10.Serviceの使い方」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/service.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ServiceSampe0101 extends AppCompatActivity {
 
     @Override

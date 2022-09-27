@@ -47,6 +47,18 @@ import androidx.fragment.app.FragmentTransaction;
 
 import com.example.androidsample.R;
 
+/**
+ * 複数のFragment間の画面遷移
+ * 「8.画面遷移(Fragment⇔Fragment)」に対応するアクティビティです。
+ *
+ * 対象URL：https://akira-watson.com/android/fragment-fragment.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class FragmentSampe0401 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -1,12 +1,5 @@
 package com.example.androidsample.imageview;
-/*
- * HorizontalScrollView(横スクロール)コード版
- * 　対象URL：https://akira-watson.com/android/horizontal-scrollview.html
- *
- * 縦スクロールの場合はHorizontalScrollViewを使います。(横スクロールはScrollView)
- * 使い方はScrollViewと同じですのでScrollViewSampe0101(レイアウト版)、ScrollViewSampe0102(コード版)を参照
- *
- */
+
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -21,6 +14,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * HorizontalScrollView(横スクロール)コード版
+ * 「13. HorizontalScrollView(横スクロール)コード版」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/horizontal-scrollview.html
+ *
+ *【サンプルについて】
+ * 縦スクロールの場合はHorizontalScrollViewを使います。(横スクロールはScrollView)
+ * 使い方はScrollViewと同じですのでScrollViewSampe0101(レイアウト版)、ScrollViewSampe0102(コード版)を参照
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class HorizontalScrollViewSampe0102 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

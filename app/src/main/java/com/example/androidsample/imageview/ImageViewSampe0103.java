@@ -1,4 +1,3 @@
-package com.example.androidsample.imageview;
 /*
  * ImageViewを使って画像を表示する：(assetsに画像を置きそれを取り込む)
  * 　対象URL：https://akira-watson.com/android/imageview.html
@@ -27,6 +26,8 @@ package com.example.androidsample.imageview;
  * }
  *
  */
+package com.example.androidsample.imageview;
+
 import android.content.res.AssetManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -41,6 +42,18 @@ import com.example.androidsample.R;
 
 import java.io.InputStream;
 
+/**
+ * ImageViewサンプル03
+ * 「3. ImageViewを使って画像を表示する：(assetsに画像を置きそれを取り込む)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/imageview.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ImageViewSampe0103 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

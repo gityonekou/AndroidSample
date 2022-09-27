@@ -1,4 +1,3 @@
-package com.example.androidsample.imageview;
 /*
  * ImageViewを使って画像を表示する：(ic_launcherを画像として表示)
  * 　対象URL：https://akira-watson.com/android/imageview2.html
@@ -13,7 +12,10 @@ package com.example.androidsample.imageview;
  *
  * 【Color.argbメソッド】
  * rgb構成に透明度という要素が新たにあるみたい。これも後で調べないとですわ。。
+ *
  */
+package com.example.androidsample.imageview;
+
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.Log;
@@ -27,6 +29,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * ImageViewサンプル04
+ * 「4. 上サンプルをLayoutを使わずコードで(ic_launcherを画像として表示)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/imageview2.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ImageViewSampe0201 extends AppCompatActivity {
 
     private ImageView imageView;

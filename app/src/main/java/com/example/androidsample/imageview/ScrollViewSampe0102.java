@@ -1,4 +1,3 @@
-package com.example.androidsample.imageview;
 /*
  * ScrollView:画面の縦スクロール(コード版)
  * 　対象URL：https://akira-watson.com/android/scrollview.html
@@ -13,6 +12,8 @@ package com.example.androidsample.imageview;
  * こちらはScrollViewSampe0101のレイアウトをjavaコードで記述するバージョンです。
  *
  */
+package com.example.androidsample.imageview;
+
 import android.os.Bundle;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -24,6 +25,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * ScrollView:画面の縦スクロール(コード版)
+ * 「11. ScrollView(縦スクロール)コード版」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/scrollview.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ScrollViewSampe0102 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

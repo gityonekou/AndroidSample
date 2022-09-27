@@ -1,4 +1,3 @@
-package com.example.androidsample.imageview;
 /*
  * Matrixで画像を回転、フリップ、縮小させる
  * 　対象URL：https://akira-watson.com/android/matrix.html
@@ -7,6 +6,8 @@ package com.example.androidsample.imageview;
  * ただし基本的に画像処理はパフォーマンス、メモリを使いますので注意しましょう。
  *
  */
+package com.example.androidsample.imageview;
+
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
@@ -21,6 +22,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * ImageViewサンプル07
+ * 「7. Matrixで画像を回転、フリップ、縮小させる」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/matrix.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ImageViewSampe0401 extends AppCompatActivity {
     private ImageView imageView;
     private Bitmap btmp;

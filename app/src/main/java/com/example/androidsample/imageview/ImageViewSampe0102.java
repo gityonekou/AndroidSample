@@ -1,4 +1,3 @@
-package com.example.androidsample.imageview;
 /*
  * ImageViewを使って画像を表示する：(ImageView.setImageResourceメソッドを使う場合)
  * 　対象URL：https://akira-watson.com/android/imageview.html
@@ -7,6 +6,8 @@ package com.example.androidsample.imageview;
  * この場合、動的に画像を変更でいます。
  *
  */
+package com.example.androidsample.imageview;
+
 import android.os.Bundle;
 import android.widget.ImageView;
 
@@ -15,6 +16,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * ImageViewサンプル02
+ * 「2. ImageViewを使って画像を表示する：(ImageView.setImageResourceメソッドを使う)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/imageview.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ImageViewSampe0102 extends AppCompatActivity {
 
     private boolean flg = true;

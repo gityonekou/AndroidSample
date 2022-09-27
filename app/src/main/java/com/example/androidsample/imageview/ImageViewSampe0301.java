@@ -1,4 +1,3 @@
-package com.example.androidsample.imageview;
 /*
  * ImageViewをドラッグする：(View.layout()メソッドを使用)
  * 　対象URL：https://akira-watson.com/android/imageview-drag.html
@@ -14,6 +13,8 @@ package com.example.androidsample.imageview;
  * このサンプルはView.layoutメソッドを使うサンプルです
  *
  */
+package com.example.androidsample.imageview;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Button;
@@ -24,6 +25,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * ImageViewサンプル05
+ * 「5. 画像をドラッグする：(View.layout()メソッド)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/imageview-drag.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ImageViewSampe0301 extends AppCompatActivity {
     private ImageView imageView;
     private int counter = 0;

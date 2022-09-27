@@ -1,4 +1,3 @@
-package com.example.androidsample.imageview;
 /*
  * ImageViewを使って画像を表示する：(android:srcを使う場合)
  * 　対象URL：https://akira-watson.com/android/imageview.html
@@ -11,6 +10,8 @@ package com.example.androidsample.imageview;
  * android:scaleType="centerCrop"
  *
  */
+package com.example.androidsample.imageview;
+
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -18,6 +19,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * ImageViewサンプル01
+ * 「1. ImageViewを使って画像を表示する：(android:srcを使う)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/imageview.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ImageViewSampe0101 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

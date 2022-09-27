@@ -1,4 +1,3 @@
-package com.example.androidsample.imageview;
 /*
  * アンドロイド標準アイコンを一覧表示(GridView)します。
  * 　対象URL：https://akira-watson.com/android/gridview-icon.html
@@ -16,6 +15,7 @@ package com.example.androidsample.imageview;
  * キー名:alert_dark_frameなど
  *
  */
+package com.example.androidsample.imageview;
 
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -33,6 +33,22 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * アンドロイド標準アイコンの一覧表示
+ * 「15. Android標準アイコン(一覧表示)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/gridview-icon.html
+ *
+ *【サンプルについて】
+ * アンドロイドで標準で用意されているアイコンをGridViewで一覧表示します。
+ * GridViewについては「リスト表示」メニューの「GridView」にて確認ください。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ImageViewSampe0602 extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     // サンプルの実行タイプとその値

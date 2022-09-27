@@ -1,4 +1,3 @@
-package com.example.androidsample.imageview;
 /*
  * ImageViewをドラッグする：(onTouchムーブアクション)
  * 　対象URL：https://akira-watson.com/android/imageview-drag.html
@@ -23,6 +22,8 @@ package com.example.androidsample.imageview;
  * があり、これはActivityの画面全体でのタッチイベントを拾うときに使います
  *
  */
+package com.example.androidsample.imageview;
+
 import android.os.Bundle;
 import android.util.Log;
 import android.view.MotionEvent;
@@ -37,6 +38,18 @@ import com.example.androidsample.customgui.CustomImageView;
 
 import java.util.Locale;
 
+/**
+ * ImageViewサンプル06
+ * 「6. 画像をドラッグする：(onTouchムーブアクション)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/imageview-drag.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ImageViewSampe0302 extends AppCompatActivity implements View.OnTouchListener {
     private TextView textView;
     private CustomImageView imageView;

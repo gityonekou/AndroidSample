@@ -1,4 +1,3 @@
-package com.example.androidsample.imageview;
 /*
  * アンドロイド標準アイコンの表示
  * 　対象URL：https://akira-watson.com/android/gridview-icon.html
@@ -12,6 +11,8 @@ package com.example.androidsample.imageview;
  * 例：android:src="@android:drawable/alert_dark_frame"
  *
  */
+package com.example.androidsample.imageview;
+
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -20,6 +21,21 @@ import androidx.annotation.Nullable;
 
 import com.example.androidsample.R;
 
+/**
+ * アンドロイド標準アイコンの表示
+ * 「14. Android標準アイコン」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/gridview-icon.html
+ *
+ *【サンプルについて】
+ * アンドロイドで標準で用意されているアイコンの表示方法のサンプルです。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ImageViewSampe0601 extends Activity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -1,4 +1,3 @@
-package com.example.androidsample.imageview;
 /*
  * ScrollView:画面の縦スクロール
  * 　対象URL：https://akira-watson.com/android/scrollview.html
@@ -10,11 +9,9 @@ package com.example.androidsample.imageview;
  * どうするかというと、テキストやボタンなどをまとめてスクロールさせたい場合は、LinearLayout等でくくり、
  * ScrollさせるのはLinearLayoutだけという体裁をとればOKです。
  *
- * このアクティビティで以下のサンプルを実装します。
- * type1:ScrollView(縦スクロール)のサンプル
- * type2:ScrollView(複数UI：縦スクロール)のサンプル
- *
  */
+package com.example.androidsample.imageview;
+
 import android.os.Bundle;
 import android.widget.Toast;
 
@@ -23,6 +20,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * ScrollView:画面の縦スクロール
+ * 「9. ScrollView(縦スクロール)」
+ * 「10. ScrollView(複数UI：縦スクロール)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/scrollview.html
+ *
+ * 9.10の切り替えは呼び出し元にてフラグ[type]の値をIntentに設定することにより行います。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ScrollViewSampe0101 extends AppCompatActivity {
     public static final String KEY = "type";
     // type1:ScrollView(縦スクロール)のサンプル

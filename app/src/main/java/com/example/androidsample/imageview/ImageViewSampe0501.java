@@ -1,4 +1,3 @@
-package com.example.androidsample.imageview;
 /*
  * Picassoで大きい画像を扱ってみる
  * 　対象URL：https://akira-watson.com/android/picasso.html
@@ -9,6 +8,8 @@ package com.example.androidsample.imageview;
  * サンプル以外にもいろいろなオプションを指定できますので詳しくはホームページにて確認のこと
  *
  */
+package com.example.androidsample.imageview;
+
 import android.os.Bundle;
 import android.widget.ImageView;
 
@@ -18,6 +19,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.androidsample.R;
 import com.squareup.picasso.Picasso;
 
+/**
+ * ImageViewサンプル08
+ * 「8. Picassoで大きい画像を扱ってみる」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/picasso.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ImageViewSampe0501 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

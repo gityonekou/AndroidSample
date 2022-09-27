@@ -1,7 +1,5 @@
 package com.example.androidsample.imageview;
-/*
- * ImageViewSampe0602で使用するAdapterです。BaseAdapterを継承して作成します。
- */
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -13,6 +11,15 @@ import com.example.androidsample.R;
 
 import java.util.List;
 
+/**
+ * ImageViewSampe0602で使用するAdapterです。BaseAdapterを継承して作成します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ImageViewSampe0602Adapter extends BaseAdapter {
 
     private static class ViewHolder {

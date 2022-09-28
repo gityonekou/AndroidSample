@@ -1,11 +1,5 @@
 package com.example.androidsample.list;
-/*
- * ListView と ArrayAdapter で簡単なテキストリストを表示する(ヘッダー、フッターを追加)
- * 対象URL:https://akira-watson.com/android/arrayadapter.html
- *
- * 今回のサンプルはListViewのaddHeaderViewメソッド、addFooterViewメソッドを使った簡単なサンプルになります。
- *
- */
+
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.TypedValue;
@@ -18,6 +12,23 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * ListViewサンプル03
+ * 「3.簡単なテキストリストの表示(ListViewのヘッダー、フッター)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/arrayadapter.html
+ *
+ * [内容]
+ * ListView と ArrayAdapter で簡単なテキストリストを表示する(ヘッダー、フッターを追加)
+ *
+ * 今回のサンプルはListViewのaddHeaderViewメソッド、addFooterViewメソッドを使った簡単なサンプルになります。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ListViewSample0103 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

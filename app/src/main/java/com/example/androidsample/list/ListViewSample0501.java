@@ -1,13 +1,15 @@
-package com.example.androidsample.list;
 /*
- * ListView アイテム個々の背景、高さなどを変える
+ *　ListView アイテム個々の背景、高さなどを変える
  *
  * 対象URL:https://akira-watson.com/android/listview-item-adjust.html
  *
  * 表示しているリスト項目を個々の順番などで変更(背景色を変える、レイアウトを変えるなど)する場合は作成するAdapterの
  * getViewメソッドでpositionの値を判定して個々のViewを返すことで実現可能です。
  *
+ *
  */
+package com.example.androidsample.list;
+
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -20,6 +22,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * ListView アイテム個々の背景、高さなどを変える
+ * 「8.個々のアイテムでレイアウトを変える」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/listview-item-adjust.html
+ *
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ListViewSample0501 extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     // リスト表示内容

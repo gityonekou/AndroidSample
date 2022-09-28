@@ -1,4 +1,3 @@
-package com.example.androidsample.list;
 /*
  * Picassoでネット上の画像をGridViewで表示
  * 　対象URL：https://akira-watson.com/android/gridview-picasso.html
@@ -15,6 +14,8 @@ package com.example.androidsample.list;
  *
  *
  */
+package com.example.androidsample.list;
+
 import android.graphics.Point;
 import android.graphics.Rect;
 import android.os.Bundle;
@@ -27,6 +28,18 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * GridViewサンプル02
+ * 「13.Picassoでネット上の画像をGridViewで表示」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/gridview-picasso.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class GridViewSample0201 extends AppCompatActivity {
 
     @Override

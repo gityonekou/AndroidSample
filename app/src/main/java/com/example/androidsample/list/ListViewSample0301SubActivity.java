@@ -1,10 +1,5 @@
 package com.example.androidsample.list;
-/*
- * ListViewSample0301でリストタップ時に呼ばれるアクティビティです。タップされたリスト項目の詳細情報を表示します。
- *
- * 対象URL:https://akira-watson.com/android/listview_2.html
- *
- */
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.widget.ImageView;
@@ -15,6 +10,17 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * ListViewSample0301でリストタップ時に呼ばれるアクティビティです。タップされたリスト項目の詳細情報を表示します。
+ *
+ * 対象URL:https://akira-watson.com/android/listview_2.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ListViewSample0301SubActivity extends AppCompatActivity {
 
     public static final String NAME_KEY = "name";

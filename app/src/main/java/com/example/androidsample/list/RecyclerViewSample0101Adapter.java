@@ -1,8 +1,5 @@
 package com.example.androidsample.list;
-/*
- * RecyclerViewSample0101で使用するアダプタです
- *
- */
+
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +10,15 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.androidsample.R;
 
+/**
+ * RecyclerViewSample0101で使用するアダプタです
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class RecyclerViewSample0101Adapter
         extends RecyclerView.Adapter<RecyclerViewSample0101Adapter.ViewHolder> {
     private final String[] dataSet;

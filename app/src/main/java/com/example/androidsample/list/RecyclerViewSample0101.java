@@ -1,4 +1,3 @@
-package com.example.androidsample.list;
 /*
  * RecyclerViewでテキストリストの表示
  * 対象URL:https://akira-watson.com/android/recyclerview.html
@@ -34,6 +33,8 @@ package com.example.androidsample.list;
  *
  *
  */
+package com.example.androidsample.list;
+
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -45,6 +46,18 @@ import com.example.androidsample.R;
 
 import java.util.Locale;
 
+/**
+ * RecyclerViewサンプル01
+ * 「9.RecyclerViewでテキストリストの表示」に対応するアクティビティです。
+ *
+ * 　対象URL:https://akira-watson.com/android/recyclerview.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class RecyclerViewSample0101 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -1,4 +1,3 @@
-package com.example.androidsample.list;
 /*
  * ListViewSample0301で使用するAdapterです。BaseAdapterを継承して作成します。
  *
@@ -54,6 +53,8 @@ package com.example.androidsample.list;
  *
  *
  */
+package com.example.androidsample.list;
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -64,6 +65,15 @@ import android.widget.TextView;
 
 import com.example.androidsample.R;
 
+/**
+ * ListViewSample0301で使用するAdapterです。BaseAdapterを継承して作成します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ListViewSample0301Adapter extends BaseAdapter {
 
     private final LayoutInflater inflater;

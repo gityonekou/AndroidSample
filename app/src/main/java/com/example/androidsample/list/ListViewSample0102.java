@@ -1,4 +1,3 @@
-package com.example.androidsample.list;
 /*
  * ListView と ArrayAdapter で簡単なテキストリストを表示する(ver2:リストのレイアウトを指定する)
  * 対象URL:https://akira-watson.com/android/listview_1.html
@@ -25,12 +24,9 @@ package com.example.androidsample.list;
  * [SimpleAdapter]
  * Mapクラスを使ってリスト項目のレイアウトをカスタマイズする
  *
- * <<<<<<<<<<<<<<<<<<<<<<<<<<
- * 今回のサンプルはArrayAdapterを使った簡単なサンプル(ver2:リストのレイアウトを指定する)になります。
- * 表示する文字列の配列はリソース：StringArrayから取得します。
- *
- *
  */
+package com.example.androidsample.list;
+
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -40,6 +36,22 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * ListViewサンプル02
+ * 「2.簡単なテキストリストの表示(リストのレイアウトをカスタマイズ)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/listview_1.html
+ *
+ * [処理内容]
+ * 今回のサンプルはArrayAdapterを使った簡単なサンプル(ver2:リストのレイアウトを指定する)になります。
+ * 表示する文字列の配列はリソース：StringArrayから取得します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ListViewSample0102 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

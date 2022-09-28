@@ -1,20 +1,5 @@
 package com.example.androidsample.list;
-/*
- * ListFragmentSampe0101で呼び出されるListを内蔵したフラグメントです。
- * 対象URL:https://akira-watson.com/android/listactivity.html
- * 対象URL:https://android.keicode.com/basics/fragments-listfragment.php
- *
- * サンプルにあるListActivityがAPI30で非推奨となっため代替となるListFragmentでサンプルを作成しています。
- * 基本はフラグメント作成のサンプル＋今回のリストアクティビティの部分です。
- * アダプタ部分はにゃんのサンプルでそのまま利用できます
- * フラグメントの作成はFragmentSampe0101やFragmentSampe0301などを参照のこと
- * ListFragmentを使う場合、通常のFragmentと違いonCreateViewメソッドをオーバーライドする必要がありません。
- * そのため、フラグメントに対応するリストのみのレイアウトxmlも必要なくなる点に注意です。
- * アンドロイドデベロッパー：https://developer.android.com/guide/components/fragments?hl=ja
- *  「注:フラグメントが ListFragment のサブクラスの場合、デフォルトの実装で ListView がonCreateView() から返される
- *      ため、これを実装する必要はありません。」
- *
- */
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ListView;
@@ -30,6 +15,27 @@ import com.example.androidsample.common.InfoMessageDialog;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * ListFragmentSampe0101で呼び出されるListを内蔵したフラグメントです。
+ * 対象URL:https://akira-watson.com/android/listactivity.html
+ * 対象URL:https://android.keicode.com/basics/fragments-listfragment.php
+ *
+ * サンプルにあるListActivityがAPI30で非推奨となっため代替となるListFragmentでサンプルを作成しています。
+ * 基本はフラグメント作成のサンプル＋今回のリストアクティビティの部分です。
+ * アダプタ部分はにゃんのサンプルでそのまま利用できます
+ * フラグメントの作成はFragmentSampe0101やFragmentSampe0301などを参照のこと
+ * ListFragmentを使う場合、通常のFragmentと違いonCreateViewメソッドをオーバーライドする必要がありません。
+ * そのため、フラグメントに対応するリストのみのレイアウトxmlも必要なくなる点に注意です。
+ * アンドロイドデベロッパー：https://developer.android.com/guide/components/fragments?hl=ja
+ *  「注:フラグメントが ListFragment のサブクラスの場合、デフォルトの実装で ListView がonCreateView() から返される
+ *      ため、これを実装する必要はありません。」
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ListFragmentSampe0101Fragment extends ListFragment {
     private final Integer[] imageDrawables = {
             android.R.drawable.ic_menu_call,

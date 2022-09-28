@@ -1,4 +1,3 @@
-package com.example.androidsample.list;
 /*
  * ListViewアイテムの移動と削除
  *
@@ -26,6 +25,8 @@ package com.example.androidsample.list;
  *
  *
  */
+package com.example.androidsample.list;
+
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
@@ -44,6 +45,18 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * ListViewアイテムの移動と削除
+ * 「7.ListViewアイテムの移動と削除(本来はRecyclerViewでやるべき)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/listview_3.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ListViewSample0401 extends AppCompatActivity
         implements AdapterView.OnItemClickListener,
         ListViewSample0401ActionDialog.OnItemClickActionListener,

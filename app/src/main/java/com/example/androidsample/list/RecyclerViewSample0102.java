@@ -1,4 +1,3 @@
-package com.example.androidsample.list;
 /*
  * RecyclerViewで画像リストの表示
  * 対象URL:https://akira-watson.com/android/recyclerview.html
@@ -6,6 +5,8 @@ package com.example.androidsample.list;
  * RecyclerViewの基本はRecyclerViewSample0101で解説しているのでここでは割愛します。
  *
  */
+package com.example.androidsample.list;
+
 import android.content.res.Resources;
 import android.os.Bundle;
 
@@ -23,6 +24,21 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * RecyclerViewサンプル02
+ * 「10.RecyclerViewで画像リストの表示」
+ * 「11.RecyclerViewとItemTouchHelperでドラッグ&ドロップ」に対応するアクティビティです。
+ *
+ * 　対象URL:https://akira-watson.com/android/recyclerview.html
+ *
+ * 10.11の切り替えは呼び出し元にてフラグ[ItemTouchHelper]の値をIntentに設定することにより行います。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class RecyclerViewSample0102 extends AppCompatActivity {
 
     public static final String ITEM_TOUCH_HELPER = "ItemTouchHelper";

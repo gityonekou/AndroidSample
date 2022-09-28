@@ -1,8 +1,5 @@
 package com.example.androidsample.list;
-/*
- * ListViewSample0501で使用するAdapterです。BaseAdapterを継承して作成します。
- * 基本構造はListViewSample0301Adapterと全く同じです
- */
+
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -16,6 +13,16 @@ import android.widget.TextView;
 
 import com.example.androidsample.R;
 
+/**
+ * ListViewSample0501で使用するAdapterです。BaseAdapterを継承して作成します。
+ * 基本構造はListViewSample0301Adapterと全く同じです
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ListViewSample0501Adapter extends BaseAdapter {
 
     private final LayoutInflater inflater;

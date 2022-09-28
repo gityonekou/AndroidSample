@@ -1,8 +1,5 @@
 package com.example.androidsample.list;
-/*
- * RecyclerViewSample0102で使用するアダプタです
- *
- */
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -17,6 +14,15 @@ import com.example.androidsample.R;
 
 import java.util.List;
 
+/**
+ * RecyclerViewSample0102で使用するアダプタです
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class RecyclerViewSample0102Adapter
         extends RecyclerView.Adapter<RecyclerViewSample0102Adapter.ViewHolder> {
 

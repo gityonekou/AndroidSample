@@ -1,4 +1,3 @@
-package com.example.androidsample.list;
 /*
  * ListView と ArrayAdapter で簡単なテキストリストを表示する
  * 対象URL:https://akira-watson.com/android/listview_1.html
@@ -25,14 +24,14 @@ package com.example.androidsample.list;
  * [SimpleAdapter]
  * Mapクラスを使ってリスト項目のレイアウトをカスタマイズする
  *
- * <<<<<<<<<<<<<<<<<<<<<<<<<<
- * 今回のサンプルはArrayAdapterを使った簡単なサンプルになります。
- *
+ * [その他]
  * また、アダプタを生成時に指定しているレイアウト「android.R.layout.simple_list_item_1」は
  * アンドロイドにあらかじめ用意されている定義済みのレイアウトファイルのIDです。これを使うとリスト用のレイアウトファイルは
  * 不要です。
  *
  */
+package com.example.androidsample.list;
+
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -40,6 +39,18 @@ import android.widget.ListView;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * ListViewサンプル01
+ * 「1.簡単なテキストリストの表示(simple_list_item_1)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/listview_1.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ListViewSample0101 extends AppCompatActivity {
     private static final String[] listItems = {
             "abc ", "bcd", "cde", "def", "efg", "fgh", "ghi", "hij", "ijk", "jkl"

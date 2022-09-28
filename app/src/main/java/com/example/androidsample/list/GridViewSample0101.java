@@ -1,4 +1,3 @@
-package com.example.androidsample.list;
 /*
  * GridViewで画像を格子状に並べる。画像クリック時の画面遷移もここで実装します。
  * 対象URL:https://akira-watson.com/android/gridview.html
@@ -23,6 +22,8 @@ package com.example.androidsample.list;
  * こちらの詳細もにゃんサンプルを参照のこと
  *
  */
+package com.example.androidsample.list;
+
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -38,6 +39,18 @@ import com.example.androidsample.R;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * GridViewサンプル01
+ * 「12.GridViewで画像を格子状に並べる」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/gridview.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class GridViewSample0101 extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     private String[] names;

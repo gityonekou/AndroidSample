@@ -1,4 +1,3 @@
-package com.example.androidsample.list;
 /*
  * BaseAdapterを継承しカスタムでadapterを作る。＋で次のサンプルになるリストタップ時の画面遷移をここで実装します。
  *
@@ -28,6 +27,8 @@ package com.example.androidsample.list;
  * 詳しくはListViewSample0301Adapterにて説明します。
  *
  */
+package com.example.androidsample.list;
+
 import android.content.Intent;
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -40,6 +41,23 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * ListViewサンプル05
+ * 「6.BaseAdapterを継承しカスタムでadapterを作る＋画面遷移」に対応するアクティビティです。
+ *
+ * 対象URL:https://akira-watson.com/android/baseadapter.html
+ * 対象URL:https://akira-watson.com/android/listview_2.html
+ *
+ * [処理内容]
+ * 今回のサンプルではBaseAdapterを継承してカスタムでadapterを作るケースを試してみます。
+ * 次のサンプルで紹介されているリストタップ時の画面遷移もここで合わせて実装、動作確認してみます。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ListViewSample0301 extends AppCompatActivity implements AdapterView.OnItemClickListener {
 
     // リスト表示内容

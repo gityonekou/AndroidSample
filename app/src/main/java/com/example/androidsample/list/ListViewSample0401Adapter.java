@@ -1,9 +1,5 @@
 package com.example.androidsample.list;
-/*
- * ListViewSample0401で使用するAdapterです。BaseAdapterを継承して作成します。
- * 基本構造はListViewSample0301Adapterと全く同じですがリスト項目を参照するための引数がListに変更されています。
- * (ListViewSample0401でのリスト表示内容の変数変更のためアダプタ側も変更)
- */
+
 import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -17,6 +13,17 @@ import com.example.androidsample.R;
 
 import java.util.List;
 
+/**
+ * ListViewSample0401で使用するAdapterです。BaseAdapterを継承して作成します。
+ * 基本構造はListViewSample0301Adapterと全く同じですがリスト項目を参照するための引数がListに変更されています。
+ * (ListViewSample0401でのリスト表示内容の変数変更のためアダプタ側も変更)
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ListViewSample0401Adapter extends BaseAdapter {
 
     private final LayoutInflater inflater;

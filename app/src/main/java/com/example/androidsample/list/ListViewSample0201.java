@@ -1,9 +1,7 @@
-package com.example.androidsample.list;
 /*
  * ListViewタグを使う(＋レイアウトでヘッダー、フッター)
  * 対象URL:https://akira-watson.com/android/arrayadapter.html
  *
- * 。
  * 今回のサンプルはsetContentViewで設定するレイアウトxmlでヘッダー部、ListView部(ListViewタグを使う)、フッター部と
  * 分けてレイアウトを作る方法です。
  * (⇒にゃん先生談)
@@ -15,6 +13,8 @@ package com.example.androidsample.list;
  *
  *
  */
+package com.example.androidsample.list;
+
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
@@ -27,6 +27,22 @@ import com.example.androidsample.R;
 
 import java.util.Locale;
 
+/**
+ * ListViewサンプル04
+ * 「4.ListViewタグを使う(＋レイアウトでヘッダー、フッター)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/arrayadapter.html
+ *
+ * [処理内容]
+ * 今回のサンプルはsetContentViewで設定するレイアウトxmlでヘッダー部、ListView部(ListViewタグを使う)、フッター部と
+ * 分けてレイアウトを作る方法です。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ListViewSample0201 extends AppCompatActivity {
 
     private String[] listItems;

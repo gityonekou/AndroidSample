@@ -1,9 +1,5 @@
 package com.example.androidsample.list;
-/*
- * ListViewSample0401で呼び出されるリスト選択時のアクション選択ダイアログです。
- * 上に移動、下に移動、削除、キャンセルをリスト形式で表示し選択結果を呼び出し元に返します。
- *
- */
+
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -16,6 +12,16 @@ import androidx.fragment.app.DialogFragment;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * ListViewSample0401で呼び出されるリスト選択時のアクション選択ダイアログです。
+ * 上に移動、下に移動、削除、キャンセルをリスト形式で表示し選択結果を呼び出し元に返します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ListViewSample0401ActionDialog extends DialogFragment {
 
     public static final String TITLE_KEY = "title";

@@ -1,7 +1,5 @@
 package com.example.androidsample.list;
-/*
- * GridViewSample0101で使用するAdapterです。BaseAdapterを継承して作成します。
- */
+
 import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,6 +12,15 @@ import com.example.androidsample.R;
 
 import java.util.List;
 
+/**
+ * GridViewSample0101で使用するAdapterです。BaseAdapterを継承して作成します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class GridViewSample0101Adapter extends BaseAdapter {
 
     private static class ViewHolder {

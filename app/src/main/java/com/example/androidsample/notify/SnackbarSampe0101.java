@@ -1,4 +1,3 @@
-package com.example.androidsample.notify;
 /*
  * Snackbar(スナックバー)を表示する
  *
@@ -23,6 +22,8 @@ package com.example.androidsample.notify;
  * が必要です。最近のAndroid Studioではデフォルトで入っています。尚、バージョンは適宜調整してください。
  *
  */
+package com.example.androidsample.notify;
+
 import android.os.Bundle;
 import android.widget.Button;
 
@@ -32,6 +33,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.androidsample.R;
 import com.google.android.material.snackbar.Snackbar;
 
+/**
+ * Snackbar(スナックバー)サンプル01
+ * 「2.Snackbar(スナックバー)を表示する」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/snackbar.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class SnackbarSampe0101 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

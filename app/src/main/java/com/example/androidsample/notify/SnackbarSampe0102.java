@@ -1,4 +1,3 @@
-package com.example.androidsample.notify;
 /*
  * Snackbar(スナックバー)で簡単なアクションを実装する
  *
@@ -15,6 +14,8 @@ package com.example.androidsample.notify;
  * その他にバーの背景色を変えたり、Actionの文字列色を変更するメソッドがあります。
  *
  */
+package com.example.androidsample.notify;
+
 import android.graphics.Color;
 import android.os.Bundle;
 import android.widget.Button;
@@ -26,6 +27,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.androidsample.R;
 import com.google.android.material.snackbar.Snackbar;
 
+/**
+ * Snackbar(スナックバー)サンプル02
+ * 「3.Snackbar(スナックバー)で簡単なアクションを実装する」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/snackbar.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class SnackbarSampe0102 extends AppCompatActivity {
 
     private TextView textView;

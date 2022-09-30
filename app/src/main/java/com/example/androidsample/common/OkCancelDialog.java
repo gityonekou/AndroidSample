@@ -14,9 +14,11 @@ import com.example.androidsample.R;
 /**
  * メッセージに対してOK、キャンセルの選択を行うダイアログです。
  *
- * 呼び出し元にて以下のキーに対応する値をBundleで設定してください。
+ * 呼び出し元にて以下のキーに対応する値をBundleで設定、OK、キャンセルボタン押下時のリスナーを実装してください。
  * TITLE_KEY:このダイアログで表示するタイトル
  * MESSAGE_KEY:このダイアログで表示するメッセージ
+ * OkCancelDialog.OkCancelListenerインターフェース
+ *
  *
  **************************************
  * 変更履歴:
@@ -29,8 +31,18 @@ public class OkCancelDialog extends DialogFragment {
     public static final String TITLE_KEY = "title_key";
     public static final String MESSAGE_KEY = "message_key";
 
+    /**
+     * OkCancelDialog.OkCancelListenerインターフェース
+     */
     public interface OkCancelListener {
+        /**
+         * OKボタン押下時
+         */
         void onOkClicked();
+
+        /**
+         * キャンセルボタン押下時
+         */
         void onCancelClicked();
     }
     private OkCancelListener listener;

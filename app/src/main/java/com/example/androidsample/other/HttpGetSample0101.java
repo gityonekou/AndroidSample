@@ -1,4 +1,3 @@
-package com.example.androidsample.other;
 /*
  * HttpURLConnection GET で画像をダウンロードする
  * 　対象URL：https://akira-watson.com/android/httpurlconnection-get.html
@@ -12,10 +11,9 @@ package com.example.androidsample.other;
  * また、非同期は以前はAsyncTaskを使っていましたが、Android 11から非推奨となりました。
  * 代案としてはPOSTならVolley、GETならExecutors＋(Handler or HandlerCompat)を使用する等があります。
  *
- *【サンプルについて】
- * URLをEditTextで入力してボタンをタップ、目的の画像を取得して表示するという流れです
- *
  */
+package com.example.androidsample.other;
+
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -40,6 +38,21 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.concurrent.Executors;
 
+/**
+ * HttpURLConnection GET サンプル01
+ * 「3.HTTP 非同期で(GETで要求した)画像をダウンロードする」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/httpurlconnection-get.html
+ *
+ *【サンプルについて】
+ * URLをEditTextで入力してボタンをタップ、目的の画像を取得して表示するという流れです
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class HttpGetSample0101 extends AppCompatActivity {
     private EditText editText;
     private ImageView imageView;

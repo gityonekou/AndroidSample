@@ -1,4 +1,3 @@
-package com.example.androidsample.other;
 /*
  * HTTP POST のデータ送信をVolleyで実装する
  * 　対象URL：https://akira-watson.com/android/httpurlconnection-post.html
@@ -33,15 +32,14 @@ package com.example.androidsample.other;
  * <uses-permission android:name="android.permission.INTERNET" />
  *
  *
- *【サンプルについて】
- * 入力内容をサーバに送信し、結果を受け取ります。サーバー側(php)では受け取った内容をもとにhtmlファイルを作成しておきます。
- * ドロイド側では結果受け取り後に確認ボタン押下で対象のhtmlを表示します。
- *
- * また、無料ドメインの場合はhttps接続(SSL)を利用できないので自分のドメインのみhttp接続を許可します
+ *【その他補足説明】
+ * 無料ドメインの場合はhttps接続(SSL)を利用できないので自分のドメインのみhttp接続を許可します
  * 詳細は以下URLにて確認してください。
  * 対象URL：https://backport.net/blog/2018/12/27/how_to_allow_http_on_android_9/
  *
  */
+package com.example.androidsample.other;
+
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -61,6 +59,22 @@ import com.example.androidsample.R;
 import java.util.HashMap;
 import java.util.Map;
 
+/**
+ * HTTP POST サンプル01
+ * 「2.HTTP POSTのデータ送信をVolleyで実装する」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/httpurlconnection-post.html
+ *
+ *【サンプルについて】
+ * 入力内容をサーバに送信し、結果を受け取ります。サーバー側(php)では受け取った内容をもとにhtmlファイルを作成しておきます。
+ * ドロイド側では結果受け取り後に確認ボタン押下で対象のhtmlを表示します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class HttpPostSample0101 extends AppCompatActivity {
     private static final String TAG = "HttpPostSample0101";
     private TextView textView;

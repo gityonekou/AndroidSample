@@ -1,4 +1,3 @@
-package com.example.androidsample.other;
 /*
  * 非同期処理 Executorの使い方
  * 　対象URL：https://akira-watson.com/android/asynctask.html
@@ -42,10 +41,9 @@ package com.example.androidsample.other;
  *      // 非同期処理が終了後、結果をメインスレッドに返す
  * }
  *
- *【サンプルについて】
- * ボタン押下でタスクを実行し、結果をTextViewに表示します。
- *
  */
+package com.example.androidsample.other;
+
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -55,6 +53,21 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * 非同期処理 Executorの使い方 サンプル01
+ * 「1.非同期処理 Executorの使い方」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/asynctask.html
+ *
+ *【サンプルについて】
+ * ボタン押下でタスクを実行し、結果をTextViewに表示します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class ExecutorSample0101 extends AppCompatActivity
         implements ExecutorSample0101Task.ExecutorSample0101TaskListener {
 

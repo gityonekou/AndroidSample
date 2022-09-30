@@ -1,3 +1,9 @@
+/*
+ * ExecutorSample0101で使用する非同期処理タスクです。
+ *
+ * 現状、シングルトンで実装していますが、シングルトンにする必要ないかも、、？？
+ *
+ */
 package com.example.androidsample.other;
 
 import android.os.Handler;
@@ -10,7 +16,11 @@ import java.util.concurrent.Executors;
 /**
  * ExecutorSample0101で使用する非同期処理タスクです。
  * 結果が終了後、結果を呼び出し元に返す必要があるので呼び出し元ではこのクラスのインターフェースメソッドを実装してください。
- * 現状、シングルトンで実装していますが、シングルトンにする必要ないかも、、？？
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
  *
  */
 public class ExecutorSample0101Task {

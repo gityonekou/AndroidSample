@@ -1,4 +1,3 @@
-package com.example.androidsample.select;
 /*
  * DatePickerをDialogFragmentで実装する
  *
@@ -26,6 +25,8 @@ package com.example.androidsample.select;
  *
  *
  */
+package com.example.androidsample.select;
+
 import android.app.DatePickerDialog;
 import android.os.Bundle;
 import android.util.Log;
@@ -41,6 +42,19 @@ import com.example.androidsample.R;
 
 import java.util.Locale;
 
+/**
+ * DatePicker サンプル01
+ *
+ * 「6.DatePicker」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/datepicker-timepicker.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class DatePickerSampe0101 extends FragmentActivity
         implements DatePickerDialog.OnDateSetListener{
 
@@ -73,6 +87,11 @@ public class DatePickerSampe0101 extends FragmentActivity
         this.textView.setText(str);
     }
 
+    /**
+     * 「日付Aを選択」ボタンを押下時のイベントリスナーです。レイアウトより直接呼び出します。
+     *
+     * @param view レイアウト
+     */
     public void showDatePickerDialogA(View view) {
         DialogFragment fragment = new DatePickerSampe0101DatePick();
         Bundle args = new Bundle();
@@ -80,6 +99,12 @@ public class DatePickerSampe0101 extends FragmentActivity
         fragment.setArguments(args);
         fragment.show(getSupportFragmentManager(), DatePickerSampe0101DatePick.DATE_PICKER_KEY);
     }
+
+    /**
+     * 「日付Bを選択」ボタンを押下時のイベントリスナーです。レイアウトより直接呼び出します。
+     *
+     * @param view レイアウト
+     */
     public void showDatePickerDialogB(View view) {
         DialogFragment fragment = new DatePickerSampe0101DatePick();
         Bundle args = new Bundle();

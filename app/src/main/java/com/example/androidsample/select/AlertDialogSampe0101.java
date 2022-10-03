@@ -1,4 +1,3 @@
-package com.example.androidsample.select;
 /*
  * AlertDialog
  * サンプル1：AlertDialogSampe0101AlertDialog
@@ -30,6 +29,8 @@ package com.example.androidsample.select;
  * １．NoticeDialogListenerのメソッドを実装し、ダイアログの選択値を表示する
  *
  */
+package com.example.androidsample.select;
+
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TextView;
@@ -40,6 +41,25 @@ import androidx.fragment.app.DialogFragment;
 
 import com.example.androidsample.R;
 
+/**
+ * AlertDialog サンプル01
+ * 「9.AlertDialog」
+ * 「10.AlertDialog(OK,Cancel)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/alertdialog.html
+ * 　対象URL：https://developer.android.com/guide/topics/ui/dialogs?hl=ja
+ *
+ * 9.10の切り替えは呼び出し元にてフラグ[type]の値をIntentに設定することにより行います。
+ *
+ *【サンプルについて】
+ * このサンプルではAlertDialogで選択された項目に対応する文字列をAlertDialogからMainActivityに返し表示します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class AlertDialogSampe0101 extends AppCompatActivity
         implements AlertDialogSampe0101AlertDialog.NoticeDefaultDialogListener,
         AlertDialogSampe0101OkCancelDialog.NoticeOkCancelDialogListener {

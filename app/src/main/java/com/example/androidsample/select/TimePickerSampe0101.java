@@ -1,4 +1,3 @@
-package com.example.androidsample.select;
 /*
  * TimePickerをDialogFragmentで実装する
  *
@@ -19,6 +18,8 @@ package com.example.androidsample.select;
  *
  *
  */
+package com.example.androidsample.select;
+
 import android.app.TimePickerDialog;
 import android.os.Bundle;
 import android.view.View;
@@ -33,6 +34,19 @@ import com.example.androidsample.R;
 
 import java.util.Locale;
 
+/**
+ * TimePicker サンプル01
+ *
+ * 「7.TimePicker」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/datepicker-timepicker.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class TimePickerSampe0101 extends AppCompatActivity
         implements TimePickerDialog.OnTimeSetListener {
 
@@ -50,6 +64,11 @@ public class TimePickerSampe0101 extends AppCompatActivity
         this.textView.setText(String.format(Locale.US, "%02d:%02d", hourOfDay, minute));
     }
 
+    /**
+     * 「時間を選択」ボタンを押下時のイベントリスナーです。レイアウトより直接呼び出します。
+     *
+     * @param view レイアウト
+     */
     public void showTimePickerDialog(View view) {
         DialogFragment fragment = new TimePickerSampe0101TimePick();
         fragment.show(getSupportFragmentManager(), "timePicker");

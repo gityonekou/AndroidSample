@@ -1,4 +1,3 @@
-package com.example.androidsample.select;
 /*
  * カスタムAlertDialog
  *
@@ -10,6 +9,8 @@ package com.example.androidsample.select;
  * のようにレイアウトをViewとして指定して画像を追加するとできます。
  *
  */
+package com.example.androidsample.select;
+
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -22,6 +23,18 @@ import androidx.fragment.app.DialogFragment;
 
 import com.example.androidsample.R;
 
+/**
+ * AlertDialog サンプル02
+ * 「11.カスタムAlertDialog」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/alertdialog2.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class AlertDialogSampe0201 extends AppCompatActivity
         implements AlertDialogSampe0201CustomAlertDialog.NoticeCustomDialogListener {
 

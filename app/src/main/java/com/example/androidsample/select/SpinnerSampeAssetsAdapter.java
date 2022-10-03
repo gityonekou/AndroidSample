@@ -17,6 +17,16 @@ import com.example.androidsample.R;
 
 import java.io.InputStream;
 
+/**
+ * SpinnerSampe0201で使用するスピナーのアダプターです。
+ * assetsから表示画像を読み込みアダプターに設定します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class SpinnerSampeAssetsAdapter extends BaseAdapter {
 
     // assets path
@@ -37,6 +47,13 @@ public class SpinnerSampeAssetsAdapter extends BaseAdapter {
         TextView textView;
     }
 
+    /**
+     * コンストラクタです。
+     * @param context 呼び出し元のコンテキスト
+     * @param itemLayoutId 表示するスピナーのレイアウト
+     * @param spinnerItems スピナーに表示する一覧アイテムの文字列配列
+     * @param spinnerImageFilePaths スピナーに表示する一覧画像パスの文字列配列
+     */
     SpinnerSampeAssetsAdapter(Context context,
                               int itemLayoutId,
                               String[] spinnerItems,

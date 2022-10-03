@@ -1,4 +1,3 @@
-package com.example.androidsample.select;
 /*
  * TimePickerSampe0101で呼び出されるDatePickerです。
  *
@@ -8,6 +7,8 @@ package com.example.androidsample.select;
  * ⇒DatePickerSampe0101と同様です。
  *
  */
+package com.example.androidsample.select;
+
 import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.os.Bundle;
@@ -18,6 +19,15 @@ import androidx.fragment.app.DialogFragment;
 
 import java.util.Calendar;
 
+/**
+ * TimePickerSampe0101で呼び出されるDatePickerです。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class TimePickerSampe0101TimePick extends DialogFragment {
     @NonNull
     @Override
@@ -25,7 +35,7 @@ public class TimePickerSampe0101TimePick extends DialogFragment {
         final Calendar calendar = Calendar.getInstance();
         return new TimePickerDialog(
                 getActivity(),
-                (TimePickerSampe0101)getActivity(),
+                (TimePickerSampe0101)requireActivity(),
                 calendar.get(Calendar.HOUR_OF_DAY),
                 calendar.get(Calendar.MINUTE),
                 true);

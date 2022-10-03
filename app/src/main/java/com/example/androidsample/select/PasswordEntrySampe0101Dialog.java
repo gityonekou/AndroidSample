@@ -1,9 +1,5 @@
 package com.example.androidsample.select;
-/*
- * 　カスタムでユーザID、パスワードを入力するAlertDialogを作成します。
- *
- *
- */
+
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -20,9 +16,32 @@ import androidx.fragment.app.DialogFragment;
 
 import com.example.androidsample.R;
 
+/**
+ * カスタムでユーザID、パスワードを入力するAlertDialogです。
+ *
+ * 呼び出し元にて入力完了時(OKボタン押下時)のリスナーを実装してください。
+ * PasswordEntrySampe0101Dialog.NoticePasswordEntryDialogListenerインターフェース
+ *
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class PasswordEntrySampe0101Dialog extends DialogFragment {
 
+    /**
+     * PasswordEntrySampe0101Dialog.NoticePasswordEntryDialogListenerインターフェース
+     */
     public interface NoticePasswordEntryDialogListener {
+        /**
+         * OKボタン押下時、入力エントリーに入力ミスがない場合はこのメソッドが呼び出されます。
+         *
+         * @param fragment　このダイアログのフラグメント
+         * @param id　　　　　入力したユーザID
+         * @param password  入力したパスワード
+         */
         void entryValue(DialogFragment fragment, String id, String password);
     }
     private NoticePasswordEntryDialogListener listener;

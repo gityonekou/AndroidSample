@@ -1,4 +1,3 @@
-package com.example.androidsample.select;
 /*
  * NumberPicker
  *
@@ -8,6 +7,8 @@ package com.example.androidsample.select;
  * NumberPickerはButtonなどと同様にレイアウトの属性として指定することができます。
  *
  */
+package com.example.androidsample.select;
+
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.NumberPicker;
@@ -20,6 +21,19 @@ import com.example.androidsample.R;
 
 import java.util.Locale;
 
+/**
+ * NumberPicker サンプル01
+ *
+ * 「8.NumberPicker」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/numberpicker.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class NumberPickerSampe0101 extends AppCompatActivity {
 
     private TextView pickerTextView;

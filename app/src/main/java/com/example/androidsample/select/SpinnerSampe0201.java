@@ -1,10 +1,9 @@
-package com.example.androidsample.select;
 /*
  * Spinner(スピナー)をカスタマイズして画像リストを表示する。
  * また、フォントサイズ、背景色などを変更する。
  * 画像はdrawable配下のイメージを表示するタイプとassets配下のイメージを表示するタイプになります。
  *
- * 　対象URL：https://akira-watson.com/android/checkbox.html
+ * 　対象URL：https://akira-watson.com/android/spinner-customize.html
  *
  * Spinner はただリスト項目を選択するだけではなく、画像とテキスト(フォントサイズ変更など)をレイアウトすることも可能です。
  * ListViewと同じようにadapterをカスタマイズして使い、ちょっとリッチなspinnerにすることもできます。
@@ -36,6 +35,7 @@ package com.example.androidsample.select;
  *
  *
  */
+package com.example.androidsample.select;
 
 import android.content.res.AssetManager;
 import android.content.res.Resources;
@@ -56,6 +56,22 @@ import com.example.androidsample.R;
 
 import java.io.InputStream;
 
+/**
+ * Spinner(スピナー)サンプル03
+ *
+ * 「4.Spinnerをカスタマイズする(drawable版)」
+ * 「5.Spinnerをカスタマイズする(assets版)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/spinner-customize.html
+ *
+ * 4.5の切り替えは呼び出し元にてフラグ[type]の値をIntentに設定することにより行います。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class SpinnerSampe0201 extends AppCompatActivity {
     public static final String TYPE="type";
     public static final String TYPE_DRAWABLE="drawable";

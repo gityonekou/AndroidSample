@@ -1,8 +1,5 @@
 package com.example.androidsample.select;
-/*
- * AlertDialogSampe0101で呼び出されるAlertDialogです。
- *
- */
+
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -14,9 +11,31 @@ import androidx.fragment.app.DialogFragment;
 
 import com.example.androidsample.R;
 
+/**
+ * AlertDialogSampe0101で呼び出されるAlertDialogです。
+ *
+ * 呼び出し元にてダイアログアイテム選択時のリスナーを実装してください。
+ * AlertDialogSampe0101AlertDialog.NoticeDefaultDialogListenerインターフェース
+ *
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class AlertDialogSampe0101AlertDialog extends DialogFragment {
     private String[] menuList;
+
+    /**
+     * AlertDialogSampe0101AlertDialog.NoticeDefaultDialogListenerインターフェース
+     */
     public interface NoticeDefaultDialogListener {
+        /**
+         * メニュー選択時に呼び出されます
+         * @param fragment このダイアログのフラグメント
+         * @param selectText 選択したメニューに対応する文字列
+         */
         void onDialogItemClick(DialogFragment fragment, String selectText);
     }
     private NoticeDefaultDialogListener listener;

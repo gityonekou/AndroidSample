@@ -1,8 +1,5 @@
 package com.example.androidsample.select;
-/*
- * AlertDialogSampe0201で呼び出されるカスタムされたAlertDialogです。
- *
- */
+
 import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.Context;
@@ -16,9 +13,32 @@ import androidx.fragment.app.DialogFragment;
 
 import com.example.androidsample.R;
 
+/**
+ * AlertDialogSampe0201で呼び出されるカスタムされたAlertDialogです。
+ *
+ * 呼び出し元にて表示画像を選択時のリスナーを実装してください。
+ * AlertDialogSampe0201CustomAlertDialog.NoticeCustomDialogListenerインターフェース
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class AlertDialogSampe0201CustomAlertDialog extends DialogFragment {
 
+    /**
+     * AlertDialogSampe0201CustomAlertDialog.NoticeCustomDialogListenerインターフェース
+     *
+     */
     public interface NoticeCustomDialogListener {
+        /**
+         * 画像選択時に呼び出されます
+         *
+         * @param fragment このダイアログのフラグメント
+         * @param imageId 選択した画像に対応するイメージリソースID
+         * @param message 選択した画像に対応するメッセージ
+         */
         void choiceImage(DialogFragment fragment, int imageId, String message);
     }
     private NoticeCustomDialogListener listener;

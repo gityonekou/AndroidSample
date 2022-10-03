@@ -1,4 +1,3 @@
-package com.example.androidsample.select;
 /*
  * Spinner(スピナー)でプルダウンを表示する
  *
@@ -35,6 +34,8 @@ package com.example.androidsample.select;
  *
  *
  */
+package com.example.androidsample.select;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -47,6 +48,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * Spinner(スピナー)サンプル01
+ *
+ * 「2.Spinner(スピナー)でプルダウンを表示する」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/spinner.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class SpinnerSampe0101 extends AppCompatActivity {
 
     private TextView textView;

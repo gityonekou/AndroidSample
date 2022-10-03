@@ -11,6 +11,16 @@ import android.widget.TextView;
 
 import com.example.androidsample.R;
 
+/**
+ * SpinnerSampe0201で使用するスピナーのアダプターです。
+ * イメージリソース(Drawable)から表示画像を読み込みアダプターに設定します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class SpinnerSampeDrawableAdapter extends BaseAdapter {
 
     // レイアウトからViewを生成するためのクラス
@@ -26,6 +36,14 @@ public class SpinnerSampeDrawableAdapter extends BaseAdapter {
         TextView textView;
     }
 
+    /**
+     * コンストラクタです。
+     *
+     * @param context 呼び出し元のコンテキスト
+     * @param itemLayoutId 表示するスピナーのレイアウト
+     * @param spinnerItems スピナーに表示する一覧の文字列配列
+     * @param spinnerImages スピナーに表示する一覧画像の文字列配列
+     */
     SpinnerSampeDrawableAdapter(Context context,
                                 int itemLayoutId,
                                 String[] spinnerItems,

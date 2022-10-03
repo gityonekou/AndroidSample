@@ -1,4 +1,3 @@
-package com.example.androidsample.select;
 /*
  * CheckBoxの配置
  *
@@ -8,6 +7,8 @@ package com.example.androidsample.select;
  * 選択時のリスナー、またチェックボックスとしてのテキストを表示できます。
  *
  */
+package com.example.androidsample.select;
+
 import android.os.Bundle;
 import android.widget.CheckBox;
 
@@ -16,6 +17,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * CheckBox サンプル01
+ *
+ * 「1.CheckBoxの配置」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/checkbox.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class CheckBoxSampe0101 extends AppCompatActivity {
 
     private final CheckBox[] checkBox = new CheckBox[2];

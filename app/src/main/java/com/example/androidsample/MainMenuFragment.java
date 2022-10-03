@@ -1,8 +1,11 @@
 package com.example.androidsample;
 
+import android.content.Context;
 import android.content.Intent;
 import android.view.View;
 import android.widget.AdapterView;
+
+import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -43,10 +46,16 @@ public class MainMenuFragment extends AbstractMenuListFragment {
      */
     public static MainMenuFragment newInstance(String title) {
         MainMenuFragment fragment = new MainMenuFragment();
-        fragment.menuItems = fragment.getResources().getStringArray(R.array.top_menu);
         // パラメータを設定
         fragment.title = title;
         return fragment;
+    }
+
+    @Override
+    public void onAttach(@NonNull Context context) {
+        super.onAttach(context);
+        // アタッチ時、トップメニューのリスト表示データを取得
+        this.menuItems = context.getResources().getStringArray(getTextArrayResId());
     }
 
     @Override

@@ -1,11 +1,10 @@
-package com.example.androidsample.text;
-
 /*
  * TextView で文字を表示するサンプルです。
  * レイアウトファイルを使わないでコードでTextViewを設定します。(ConstraintLayout版)
  * 　対象URL：https://akira-watson.com/android/textview-code-constarintlayout.html
  *
  */
+package com.example.androidsample.text;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -20,6 +19,19 @@ import androidx.constraintlayout.widget.ConstraintSet;
 
 import com.example.androidsample.R;
 
+/**
+ * TextView サンプル03
+ *
+ * 「3. レイアウトファイルを使わないでコードでTextViewを設定(ConstraintLayout版)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/textview-code-constarintlayout.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class TextViewSampe0301 extends AppCompatActivity {
 
     @Override

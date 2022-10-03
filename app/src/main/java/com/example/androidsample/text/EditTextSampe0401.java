@@ -1,4 +1,3 @@
-package com.example.androidsample.text;
 /*
  * TextWatcherで入力を監視する
  * 　対象URL：https://akira-watson.com/android/textwatcher.html
@@ -7,6 +6,8 @@ package com.example.androidsample.text;
  * 例えば入力パスワードの制限文字数がある場合に「文字数オーバー」と表示するなどです。
  *
  */
+package com.example.androidsample.text;
+
 import android.graphics.Color;
 import android.os.Bundle;
 import android.text.Editable;
@@ -19,6 +20,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * EditText サンプル04
+ *
+ * 「8. TextWatcherで入力を監視する」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/textwatcher.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class EditTextSampe0401 extends AppCompatActivity implements TextWatcher {
     private TextView textView;
 

@@ -1,4 +1,3 @@
-package com.example.androidsample.text;
 /*
  * EditTextの文字入力制限と表示制限
  * EditTextの各種文字入力制限パラメータ、表示制限パラメータを試してみます。
@@ -14,7 +13,10 @@ package com.example.androidsample.text;
  *
  * 行数を制限:行数を１行に固定
  * android:maxLines="1"
+ *
  */
+package com.example.androidsample.text;
+
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
@@ -22,6 +24,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * EditText サンプル03
+ *
+ * 「7. EditTextの文字入力制限と表示制限」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/edittext_input_display.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class EditTextSampe0301 extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

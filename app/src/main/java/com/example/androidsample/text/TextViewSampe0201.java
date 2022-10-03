@@ -1,11 +1,10 @@
-package com.example.androidsample.text;
-
 /*
  * TextView で文字を表示するサンプルです。
  * レイアウトファイルを使わないでコードでTextViewを設定します。(LinearLayout版)
  * 　対象URL：https://akira-watson.com/android/textview-2.html
  *
  */
+package com.example.androidsample.text;
 
 import android.graphics.Color;
 import android.os.Bundle;
@@ -19,6 +18,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * TextView サンプル02
+ *
+ * 「2. レイアウトファイルを使わないでコードでTextViewを設定(LinearLayout版)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/textview-2.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class TextViewSampe0201 extends AppCompatActivity {
 
     @Override

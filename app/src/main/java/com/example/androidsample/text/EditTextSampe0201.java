@@ -1,4 +1,3 @@
-package com.example.androidsample.text;
 /*
  * EditTextを使って文字を入力する。(おなじみのコードで直接イアウトを指定するver)
  * 　対象URL：https://akira-watson.com/android/edittext-code.html
@@ -8,6 +7,8 @@ package com.example.androidsample.text;
  * 入力の文字について、終了のタイミングとその入力の取得、フォーカスの外し方などなどです。
  *
  */
+package com.example.androidsample.text;
+
 import android.graphics.Color;
 import android.os.Bundle;
 import android.util.TypedValue;
@@ -22,6 +23,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * EditText サンプル02
+ *
+ * 「6. EditTextを使って文字を入力する(コードですべて書く)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/edittext-code.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class EditTextSampe0201 extends AppCompatActivity {
 
     private TextView textView;

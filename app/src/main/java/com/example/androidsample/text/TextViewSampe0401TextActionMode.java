@@ -6,10 +6,27 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 
+/**
+ * TextViewSampe0401にて呼び出されるActionModeです。
+ * 指定エリアのテキストを反転(選択)したときに該当する操作を実装します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class TextViewSampe0401TextActionMode extends ActionMode.Callback2 {
 
     private final TextView textView, copiedView;
 
+    /**
+     * コンストラクタです。
+     *
+     * @param textView テキストエリア(指定する側のテキストエリア)
+     * @param copiedView 指定したテキストを出力する側のテキストエリア
+     *
+     */
     public TextViewSampe0401TextActionMode(TextView textView, TextView copiedView) {
         Log.d("debug", "TextViewSampe0401TextActionMode start");
         this.textView = textView;

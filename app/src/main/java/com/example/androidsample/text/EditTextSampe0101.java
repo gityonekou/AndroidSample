@@ -1,5 +1,3 @@
-package com.example.androidsample.text;
-
 /*
  * EditTextを使って文字を入力する。(レイアウトファイルでレイアウトを指定するver)
  * 　対象URL：https://akira-watson.com/android/edittext.html
@@ -9,6 +7,7 @@ package com.example.androidsample.text;
  * 入力の文字について、終了のタイミングとその入力の取得、フォーカスの外し方などなどです。
  *
  */
+package com.example.androidsample.text;
 
 import android.os.Bundle;
 import android.widget.Button;
@@ -20,6 +19,19 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidsample.R;
 
+/**
+ * EditText サンプル01
+ *
+ * 「5. EditTextを使って文字を入力する(レイアウトを使う)」に対応するアクティビティです。
+ *
+ * 　対象URL：https://akira-watson.com/android/edittext.html
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 Javadoc追加対応
+ *
+ */
 public class EditTextSampe0101 extends AppCompatActivity {
     private TextView textView;
     private EditText editText;

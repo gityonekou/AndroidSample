@@ -1,4 +1,3 @@
-package com.example.androidsample.datastorage;
 /*
  * WEBのアンドロイドプログラミングサンプルをまとめて一つのプロジェクトとしました。
  * 参考ページ:nyanのアプリ開発：Androidアプリ版
@@ -22,33 +21,55 @@ package com.example.androidsample.datastorage;
  * 　　ネットワーク サーバーを使用してウェブにデータを保存します。
  *
  */
+package com.example.androidsample.datastorage;
+
 import android.content.Intent;
-import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
 
-import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
-
+import com.example.androidsample.AbstractMenuListFragment;
 import com.example.androidsample.R;
 import com.example.androidsample.common.CallUnderConstructionActivity;
 
-public class DataStorageSampeMenu extends AppCompatActivity
-        implements AdapterView.OnItemClickListener {
+/**
+ * トップメニューにて以下選択時に対応するフラグメントです
+ * 「9. データストレージ(I/O)」
+ *
+ * メニューリストの表示項目設定と項目選択時のリスナーを実装します。
+ *
+ **************************************
+ * 変更履歴:
+ * ver1.00 新規作成
+ * ver2.00 更新
+ * 1.トップメニュー、サブメニューをフラグメントに変更
+ *    AbstractMenuList継承にてDataStorageSampeMenuをフラグメントに変更
+ * 2.javadoc追加対応
+ *
+ */
+public class DataStorageSampeMenuFragment extends AbstractMenuListFragment {
+
+    private String title;
+
+    /**
+     *  このフラグメントのインスタンスを生成して返します。
+     * @param title 表示するタイトル
+     * @return このフラグメントのインスタンス
+     */
+    public static DataStorageSampeMenuFragment newInstance(String title) {
+        DataStorageSampeMenuFragment fragment = new DataStorageSampeMenuFragment();
+        // パラメータを設定
+        fragment.title = title;
+        return fragment;
+    }
+
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        // メニューリストを設定
-        ListView menuList = findViewById(R.id.list_view);
-        menuList.setAdapter(ArrayAdapter.createFromResource(
-                getApplicationContext(),
-                R.array.data_storage_menu,
-                android.R.layout.simple_list_item_1
-        ));
-        menuList.setOnItemClickListener(this);
+    protected String getTitleMessage() {
+        return title;
+    }
+
+    @Override
+    protected int getTextArrayResId() {
+        return R.array.data_storage_menu;
     }
 
     @Override
@@ -57,46 +78,46 @@ public class DataStorageSampeMenu extends AppCompatActivity
         switch(position) {
             case 0:
                 // 1.ファイルの入出力(アプリ固有の内部ストレージとgetFilesDir)
-                intent = new Intent(getApplicationContext(), InternalStorageSample0101.class);
+                intent = new Intent(getContext(), InternalStorageSample0101.class);
                 break;
             case 1:
                 // 2.ファイルの入出力(アプリ固有の内部ストレージとopenFileInput・Output)
-                intent = new Intent(getApplicationContext(), InternalStorageSample0102.class);
+                intent = new Intent(getContext(), InternalStorageSample0102.class);
                 break;
             case 2:
                 // 3.ファイルの入出力(アプリ固有の外部ストレージ)
-                intent = new Intent(getApplicationContext(), ExternalStorageSample0101.class);
+                intent = new Intent(getContext(), ExternalStorageSample0101.class);
                 break;
             case 3:
                 // 4.MediaStore：ファイル出力
-                intent = new Intent(getApplicationContext(), MediaStoreSample0101.class);
+                intent = new Intent(getContext(), MediaStoreSample0101.class);
                 break;
             case 4:
                 // 5.MediaStore：ファイル参照
-                intent = new Intent(getApplicationContext(), MediaStoreSample0201.class);
+                intent = new Intent(getContext(), MediaStoreSample0201.class);
                 break;
             case 5:
                 // 6.SAF(Storage Access Framework)でフォトアプリから画像を取り出す
-                intent = new Intent(getApplicationContext(), StorageAccessFrameworkSample0101.class);
+                intent = new Intent(getContext(), StorageAccessFrameworkSample0101.class);
                 break;
             case 6:
                 // 7.SAF(Storage Access Framework)でテキストファイルを保存する
-                intent = new Intent(getApplicationContext(), StorageAccessFrameworkSample0201.class);
+                intent = new Intent(getContext(), StorageAccessFrameworkSample0201.class);
                 break;
             case 7:
                 // 8.SAF(Storage Access Framework)でイメージファイルを保存する
-                intent = new Intent(getApplicationContext(), StorageAccessFrameworkSample0202.class);
+                intent = new Intent(getContext(), StorageAccessFrameworkSample0202.class);
                 break;
             case 8:
                 // 9.アプリ設定データの保存(SharedPreferences)
-                intent = new Intent(getApplicationContext(), SharedPreferencesSample0101.class);
+                intent = new Intent(getContext(), SharedPreferencesSample0101.class);
                 break;
             case 9:
                 // 10.SQLite(データベース)の簡単なサンプル
-                intent = new Intent(getApplicationContext(), SQLiteSample0101.class);
+                intent = new Intent(getContext(), SQLiteSample0101.class);
                 break;
             default:
-                intent = new Intent(getApplicationContext(), CallUnderConstructionActivity.class);
+                intent = new Intent(getContext(), CallUnderConstructionActivity.class);
                 intent.putExtra("position", position);
                 intent.putExtra("id", id);
         }

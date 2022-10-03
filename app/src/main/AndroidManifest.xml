@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
+  更新履歴
+  ver1.00 新規作成
+  ver2.00 更新
+  1.JobIntentService非推奨対応
+  ・「android.permission.WAKE_LOCK」削除
+  ・ServiceSampe0301TestServiceのBIND_JOB_SERVICEパーミッション削除
+  ・ServiceSampe0302TestServiceのBIND_JOB_SERVICEパーミッション削除
+  2.各種メニュー、サブメニューのフラグメント化により該当アクティビティを削除
+
+-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.androidsample">
 
@@ -43,11 +54,9 @@
         </activity>
 
         <!-- CallUnderConstructionActivity -->
-        <activity
-            android:name=".common.CallUnderConstructionActivity"
-            android:label="@string/app_name">
-        </activity>
-        <activity android:name=".button.ButtonSampeMenu" />
+        <activity android:name=".common.CallUnderConstructionActivity" />
+
+        <!-- Buttonメニュー -->
         <activity android:name=".button.ButtonSampe0101" />
         <activity android:name=".button.ButtonSampe0201" />
         <activity android:name=".button.ButtonSampe0202" />
@@ -59,7 +68,7 @@
         <activity android:name=".button.ButtonSampe0501" />
         <activity android:name=".button.ButtonSampe0601" />
 
-        <activity android:name=".text.TextSampeMenu" />
+        <!-- TextView、EditTextメニュー -->
         <activity android:name=".text.TextViewSampe0101" />
         <activity android:name=".text.TextViewSampe0201" />
         <activity android:name=".text.TextViewSampe0301" />
@@ -69,7 +78,7 @@
         <activity android:name=".text.EditTextSampe0301" />
         <activity android:name=".text.EditTextSampe0401" />
 
-        <activity android:name=".imageview.ImageViewSampeMenu" />
+        <!-- ImageViewメニュー -->
         <activity android:name=".imageview.ImageViewSampe0101" />
         <activity android:name=".imageview.ImageViewSampe0102" />
         <activity android:name=".imageview.ImageViewSampe0103" />
@@ -85,19 +94,19 @@
         <activity android:name=".imageview.ImageViewSampe0601" />
         <activity android:name=".imageview.ImageViewSampe0602" />
 
-        <activity android:name=".bar.BarGuiSampeMenu" />
+        <!-- 各種バーメニュー -->
         <activity android:name=".bar.ProgressBarSampe0101" />
         <activity android:name=".bar.ProgressBarSampe0102" />
         <activity android:name=".bar.SeekBarSampe0101" />
         <activity android:name=".bar.SeekBarSampe0201" />
         <activity android:name=".bar.SeekBarSampe0202" />
 
-        <activity android:name=".notify.NotifySampeMenu" />
+        <!-- 通知メニュー -->
         <activity android:name=".notify.ToastSampe0101" />
         <activity android:name=".notify.SnackbarSampe0101" />
         <activity android:name=".notify.SnackbarSampe0102" />
 
-        <activity android:name=".select.SelectedGuiSampeMenu" />
+        <!-- 選択GUIメニュー -->
         <activity android:name=".select.CheckBoxSampe0101" />
         <activity android:name=".select.SpinnerSampe0101" />
         <activity android:name=".select.SpinnerSampe0102" />
@@ -109,7 +118,7 @@
         <activity android:name=".select.AlertDialogSampe0201" />
         <activity android:name=".select.PasswordEntrySampe0101" />
 
-        <activity android:name=".app.AppSampeMenu" />
+        <!-- Activity, Fragment, Service メニュー -->
         <activity android:name=".app.ActivitySampe0101" />
         <activity android:name=".app.ActivitySampe0101SubActivity" />
         <activity android:name=".app.ActivitySampe0201" />
@@ -145,7 +154,7 @@
             android:permission="android.permission.BIND_JOB_SERVICE" />
         -->
 
-        <activity android:name=".list.ListViewSampeMenu" />
+        <!-- リスト表示メニュー -->
         <activity android:name=".list.ListViewSample0101" />
         <activity android:name=".list.ListViewSample0102" />
         <activity android:name=".list.ListViewSample0103" />
@@ -160,7 +169,7 @@
         <activity android:name=".list.GridViewSample0101" />
         <activity android:name=".list.GridViewSample0201" />
 
-        <activity android:name=".datastorage.DataStorageSampeMenu" />
+        <!-- データストレージメニュー -->
         <activity android:name=".datastorage.InternalStorageSample0101" />
         <activity android:name=".datastorage.InternalStorageSample0102" />
         <activity android:name=".datastorage.ExternalStorageSample0101" />
@@ -172,7 +181,7 @@
         <activity android:name=".datastorage.SharedPreferencesSample0101" />
         <activity android:name=".datastorage.SQLiteSample0101" />
 
-        <activity android:name=".other.OtherSampeMenu" />
+        <!-- その他メニューメニュー -->
         <activity android:name=".other.ExecutorSample0101" />
         <activity android:name=".other.HttpPostSample0101" />
         <activity android:name=".other.HttpGetSample0101" />

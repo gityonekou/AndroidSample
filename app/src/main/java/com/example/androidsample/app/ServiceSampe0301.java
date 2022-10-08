@@ -114,8 +114,8 @@ public class ServiceSampe0301 extends AppCompatActivity {
             // Worker完了時かキャンセルされた場合は、開始ボタンを再度アクティブにする
             LiveData<WorkInfo> live = manager.getWorkInfoByIdLiveData(workRequest.getId());
             live.observe(this, status -> {
-                if(status.getState() == WorkInfo.State.SUCCEEDED
-                 || status.getState() == WorkInfo.State.CANCELLED) {
+                if(status != null && (status.getState() == WorkInfo.State.SUCCEEDED
+                 || status.getState() == WorkInfo.State.CANCELLED)) {
                     // ボタン状態遷移パターン2と3を設定
                     startBtn.setEnabled(true);
                     stopBtn.setEnabled(false);

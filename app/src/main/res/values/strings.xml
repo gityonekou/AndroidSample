@@ -123,7 +123,7 @@ OPテーマ「ちょちょちょ！ゆるゆり☆かぷりっちょ！！！」
     <string name="service_sampe0201_title">ServiceSampe0201 サービスを使って画像を表示させ続ける</string>
     <string name="service_sampe0201_description">サービスを使って画像を表示させ続ける</string>
     <string name="service_sampe0201_invalid_permission">「他のアプリの上に重ねて表示」の設定を許可に変更してください。</string>
-    <string name="service_sampe0301_text">このサンプルはログに出力するのみです。開始ボタンを押しても画面上の変化はありませんので注意してください。</string>
+    <string name="service_sampe0301_text">開始ボタン押下でバックグランド処理を開始します。途中停止する場合は停止ボタンを押下します。</string>
 
     <string name="listfragment_sampe0101_text">ListActivityがAPI30で非推奨となったためListFragmentで作成しました</string>
 

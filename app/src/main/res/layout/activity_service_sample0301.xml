@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/service_sample0301_start_button"
         android:text="@string/start_button" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -24,5 +25,11 @@
         android:layout_height="wrap_content"
         android:id="@+id/service_sample0301_stop_button"
         android:text="@string/stop_button" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:id="@+id/service_sample0301_result_text" />
 
 </LinearLayout>

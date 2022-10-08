@@ -18,7 +18,9 @@ import android.widget.Button;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.lifecycle.LiveData;
 import androidx.work.OneTimeWorkRequest;
+import androidx.work.WorkInfo;
 import androidx.work.WorkManager;
 
 import com.example.androidsample.R;
@@ -32,6 +34,11 @@ import com.example.androidsample.R;
  * [処理内容]
  * ServiceSampe0302ではSoundPoolを使ってゲームの効果音の再生を試してみます。
  * WorkManagerについてはサンプルServiceSampe0301を参照ください。
+ *
+ *  「開始ボタン」、「停止ボタン」は以下3パターンの状態変化でアクティブ・非アクティブにします。
+ *  １．background処理開始で開始ボタンを非アクティブ。停止ボタンをアクティブ
+ *  ２．background処理終了で開始ボタンをアクティブ、停止ボタンを非アクティブ
+ *  ３．停止ボタン押下で開始ボタンをアクティブ、停止ボタンを非アクティブにします。
  *
  **************************************
  * 変更履歴:
@@ -57,19 +64,30 @@ public class ServiceSampe0302 extends AppCompatActivity {
 
         // 開始ボタン押下で効果音再生開始
         startBtn.setOnClickListener( v -> {
+            WorkManager manager = WorkManager.getInstance(getApplicationContext());
             OneTimeWorkRequest workRequest =
                     new OneTimeWorkRequest.Builder(ServiceSampe0302TestService.class)
                     .addTag(WORKER_TAG)
                     .build();
-            WorkManager.getInstance(getApplicationContext()).enqueue(workRequest);
+            manager.enqueue(workRequest);
+            // ボタン状態遷移パターン1を設定
+            startBtn.setEnabled(false);
             stopBtn.setEnabled(true);
+
+            // ゲーム効果音再生完了か停止ボタンを押下時
+            LiveData<WorkInfo> live = manager.getWorkInfoByIdLiveData(workRequest.getId());
+            live.observe(this, status -> {
+                if(status.getState() == WorkInfo.State.SUCCEEDED
+                        || status.getState() == WorkInfo.State.CANCELLED) {
+                    // ボタン状態遷移パターン2と3を設定
+                    startBtn.setEnabled(true);
+                    stopBtn.setEnabled(false);
+                }
+            });
         });
 
         // 停止ボタン押下時
-        stopBtn.setOnClickListener(v -> {
-            WorkManager.getInstance(getApplicationContext()).cancelAllWorkByTag(WORKER_TAG);
-            stopBtn.setEnabled(false);
-        });
-
+        stopBtn.setOnClickListener(v ->
+            WorkManager.getInstance(getApplicationContext()).cancelAllWorkByTag(WORKER_TAG));
     }
 }

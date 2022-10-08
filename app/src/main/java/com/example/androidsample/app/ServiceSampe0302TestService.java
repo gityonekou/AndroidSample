@@ -31,7 +31,14 @@ public class ServiceSampe0302TestService extends Worker {
     private final SoundPool soundPool;
     private final int soundOne;
     private boolean loadFlg = false;
+    private boolean stopFlg = false;
 
+    /**
+     * コンストラクタ：アンドロイドフレームワークにて呼び出されます。
+     *
+     * @param context コンテキスト
+     * @param workerParams パラメータ
+     */
     public ServiceSampe0302TestService(
             @NonNull Context context, @NonNull WorkerParameters workerParams) {
         super(context, workerParams);
@@ -70,7 +77,7 @@ public class ServiceSampe0302TestService extends Worker {
                 Thread.sleep(500);
                 Log.d("debug", "sleep: " + count);
                 count++;
-            } while(!this.loadFlg && count < 200);
+            } while(!this.stopFlg && !this.loadFlg && count < 200);
 
             if(this.loadFlg) {
                 Log.d("debug", "soundPool start");
@@ -88,5 +95,11 @@ public class ServiceSampe0302TestService extends Worker {
         }
         Log.d("debug", "doWork end");
         return Result.success();
+    }
+
+    @Override
+    public void onStopped() {
+        Log.d("debug", "onStopped call");
+        stopFlg = true;
     }
 }

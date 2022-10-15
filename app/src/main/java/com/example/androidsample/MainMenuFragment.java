@@ -57,16 +57,16 @@ public class MainMenuFragment extends AbstractMenuListFragment {
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         // アタッチ時、トップメニューのリスト表示データを取得
-        this.menuItems = context.getResources().getStringArray(onCreateTextArrayResId());
+        this.menuItems = context.getResources().getStringArray(createTextArrayResId());
     }
 
     @Override
-    protected String onCreateTitleMessage() {
+    protected String createTitleMessage() {
         return title;
     }
 
     @Override
-    protected int onCreateTextArrayResId() {
+    protected int createTextArrayResId() {
         return R.array.top_menu;
     }
 

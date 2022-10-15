@@ -56,12 +56,12 @@ public class SelectedGuiSampeMenuFragment extends AbstractMenuListFragment {
     }
 
     @Override
-    protected String onCreateTitleMessage() {
+    protected String createTitleMessage() {
         return title;
     }
 
     @Override
-    protected int onCreateTextArrayResId() {
+    protected int createTextArrayResId() {
         return R.array.selected_gui_menu;
     }
 

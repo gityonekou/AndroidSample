@@ -34,14 +34,14 @@ public abstract class AbstractMenuListFragment extends Fragment
      *  このメソッドを継承先で実装してください。
      * @return タイトル部の表示メッセージ
      */
-    protected abstract String onCreateTitleMessage();
+    protected abstract String createTitleMessage();
 
     /**
      * 表示するメニューリストに対応するリソースIDを作成し返します。
      * このメソッドを継承先で実装してください。
      * @return メニューリストに対応するリソースID
      */
-    protected abstract int onCreateTextArrayResId();
+    protected abstract int createTextArrayResId();
 
     /* アクティビティへのアタッチ時に呼び出される */
     @Override
@@ -49,7 +49,7 @@ public abstract class AbstractMenuListFragment extends Fragment
         super.onAttach(context);
         // パラメータを設定
         Bundle args = new Bundle();
-        args.putString(KEY, onCreateTitleMessage());
+        args.putString(KEY, createTitleMessage());
         setArguments(args);
     }
 
@@ -78,7 +78,7 @@ public abstract class AbstractMenuListFragment extends Fragment
         ListView menuList = view.findViewById(R.id.menu_list);
         menuList.setAdapter(ArrayAdapter.createFromResource(
                 getContext(),
-                onCreateTextArrayResId(),
+                createTextArrayResId(),
                 android.R.layout.simple_list_item_1
         ));
         menuList.setOnItemClickListener(this);

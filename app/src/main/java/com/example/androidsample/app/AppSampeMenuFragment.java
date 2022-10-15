@@ -52,12 +52,12 @@ public class AppSampeMenuFragment extends AbstractMenuListFragment {
     }
 
     @Override
-    protected String onCreateTitleMessage() {
+    protected String createTitleMessage() {
         return title;
     }
 
     @Override
-    protected int onCreateTextArrayResId() {
+    protected int createTextArrayResId() {
         return R.array.app_menu;
     }
 

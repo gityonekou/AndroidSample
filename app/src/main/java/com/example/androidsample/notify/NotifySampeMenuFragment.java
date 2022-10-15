@@ -54,12 +54,12 @@ public class NotifySampeMenuFragment extends AbstractMenuListFragment {
     }
 
     @Override
-    protected String onCreateTitleMessage() {
+    protected String createTitleMessage() {
         return title;
     }
 
     @Override
-    protected int onCreateTextArrayResId() {
+    protected int createTextArrayResId() {
         return R.array.notify_menu;
     }
 

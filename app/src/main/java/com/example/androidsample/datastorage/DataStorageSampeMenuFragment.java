@@ -65,12 +65,12 @@ public class DataStorageSampeMenuFragment extends AbstractMenuListFragment {
     }
 
     @Override
-    protected String onCreateTitleMessage() {
+    protected String createTitleMessage() {
         return title;
     }
 
     @Override
-    protected int onCreateTextArrayResId() {
+    protected int createTextArrayResId() {
         return R.array.data_storage_menu;
     }
 

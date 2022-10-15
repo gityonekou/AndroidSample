@@ -55,12 +55,12 @@ public class ImageViewSampeMenuFragment extends AbstractMenuListFragment {
     }
 
     @Override
-    protected String onCreateTitleMessage() {
+    protected String createTitleMessage() {
         return title;
     }
 
     @Override
-    protected int onCreateTextArrayResId() {
+    protected int createTextArrayResId() {
         return R.array.image_view_menu;
     }
 

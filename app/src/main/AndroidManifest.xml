@@ -8,6 +8,11 @@
   ・ServiceSampe0301TestServiceのBIND_JOB_SERVICEパーミッション削除
   ・ServiceSampe0302TestServiceのBIND_JOB_SERVICEパーミッション削除
   2.各種メニュー、サブメニューのフラグメント化により該当アクティビティを削除
+  ver2.01 更新
+  1．ButtonメニューにToggleButtonサンプルのアクティビティを追加
+  　・ToggleButtonサンプル01のアクティビティ(.button.ToggleButtonSample0101)
+  2．ButtonメニューにSwitchサンプル01、02、・・の追加
+  　・Switchサンプル01のアクティビティ()
 
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
@@ -67,6 +72,7 @@
         <activity android:name=".button.ButtonSampe0402" />
         <activity android:name=".button.ButtonSampe0501" />
         <activity android:name=".button.ButtonSampe0601" />
+        <activity android:name=".button.ToggleButtonSample0101" />
 
         <!-- TextView、EditTextメニュー -->
         <activity android:name=".text.TextViewSampe0101" />

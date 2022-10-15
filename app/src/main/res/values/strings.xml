@@ -1,3 +1,13 @@
+<!--
+  更新履歴
+  ver1.00 新規作成
+  ver2.00 更新
+  ・キー:topmenuの追加
+  ・キー:service_sampe0301_textのメッセージを変更
+  ver2.01 更新
+  1．ButtonメニューにToggleButtonサンプル01の追加対応
+  2．ButtonメニューにSwitchサンプル01、02、・・の追加
+-->
 <resources>
     <string name="app_name">AndroidSample</string>
     <string name="UnderConstruction">工事中</string>
@@ -49,6 +59,13 @@
     <string name="button_sample0501_button3">Button 3</string>
     <string name="button_sample0501_button4">Button 4</string>
     <string name="button_sample0501_button5">Button 5</string>
+    <string name="toggle_button_sample0101_init_text">Toggleボタンサンプル01</string>
+    <string name="toggle_button_sample0101_btn1_on_text">Toggleボタン1をオンにしました。</string>
+    <string name="toggle_button_sample0101_btn1_off_text">Toggleボタン1をオフにしました。</string>
+    <string name="toggle_button_sample0101_btn2_on_text">Toggleボタン2をOnにしました。</string>
+    <string name="toggle_button_sample0101_btn2_off_text">Toggleボタン2をOffにしました。</string>
+    <string name="toggle_button_sample0101_btn1_on">オン</string>
+    <string name="toggle_button_sample0101_btn1_off">オフ</string>
 
     <string name="textview_sample_text">メッセージ：\nTest Text View</string>
     <string name="textview_sample0401_text">"When users select text in your app,

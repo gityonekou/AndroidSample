@@ -31,7 +31,9 @@ import com.example.androidsample.R;
  *    AbstractMenuList継承にてButtonSampeMenuをフラグメントに変更
  * 2.javadoc追加対応
  * ver2.01 更新
- * ・タイトルとメニューリストのリソースID設定メソッドの名前変更
+ * １．タイトルとメニューリストのリソースID設定メソッドの名前変更
+ * ２．ToggleButtonサンプル01の追加
+ * ３．Switchサンプル01、02、・・の追加
  *
  */
 public class ButtonSampeMenuFragment extends AbstractMenuListFragment {
@@ -111,6 +113,10 @@ public class ButtonSampeMenuFragment extends AbstractMenuListFragment {
             case 10:
                 // Button 配列を設定する(ViewにTagでマーキングする)
                 intent = new Intent(getContext(), ButtonSampe0601.class);
+                break;
+            case 11:
+                // ToggleButtonを使ってON・OFFを設定する
+                intent = new Intent(getContext(), ToggleButtonSample0101.class);
                 break;
             default:
                 intent = new Intent(getContext(), CallUnderConstructionActivity.class);

@@ -30,6 +30,8 @@ import com.example.androidsample.text.TextSampeMenuFragment;
  **************************************
  * 変更履歴:
  * ver2.00 新規作成
+ * ver2.01 更新
+ * ・タイトルとメニューリストのリソースID設定メソッドの名前変更
  *
  */
 public class MainMenuFragment extends AbstractMenuListFragment {
@@ -55,16 +57,16 @@ public class MainMenuFragment extends AbstractMenuListFragment {
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         // アタッチ時、トップメニューのリスト表示データを取得
-        this.menuItems = context.getResources().getStringArray(getTextArrayResId());
+        this.menuItems = context.getResources().getStringArray(onCreateTextArrayResId());
     }
 
     @Override
-    protected String getTitleMessage() {
+    protected String onCreateTitleMessage() {
         return title;
     }
 
     @Override
-    protected int getTextArrayResId() {
+    protected int onCreateTextArrayResId() {
         return R.array.top_menu;
     }
 

@@ -32,6 +32,8 @@ import com.example.androidsample.R;
  * 1.トップメニュー、サブメニューをフラグメントに変更
  *    AbstractMenuList継承にてAppSampeMenuをフラグメントに変更
  * 2.javadoc追加対応
+ * ver2.01 更新
+ * ・タイトルとメニューリストのリソースID設定メソッドの名前変更
  *
  */
 public class AppSampeMenuFragment extends AbstractMenuListFragment {
@@ -50,12 +52,12 @@ public class AppSampeMenuFragment extends AbstractMenuListFragment {
     }
 
     @Override
-    protected String getTitleMessage() {
+    protected String onCreateTitleMessage() {
         return title;
     }
 
     @Override
-    protected int getTextArrayResId() {
+    protected int onCreateTextArrayResId() {
         return R.array.app_menu;
     }
 

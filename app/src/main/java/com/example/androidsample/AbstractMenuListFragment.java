@@ -20,6 +20,8 @@ import androidx.fragment.app.Fragment;
  **************************************
  * 変更履歴:
  * ver2.00 新規作成
+ * ver2.01 更新
+ * ・タイトルとメニューリストのリソースID設定メソッドの名前変更
  *
  */
 public abstract class AbstractMenuListFragment extends Fragment
@@ -28,18 +30,18 @@ public abstract class AbstractMenuListFragment extends Fragment
     private static final String KEY = "title";
 
     /**
-     *  タイトル部に表示するメッセージを取得します。
+     *  タイトル部に表示するメッセージを作成し返します。
      *  このメソッドを継承先で実装してください。
      * @return タイトル部の表示メッセージ
      */
-    protected abstract String getTitleMessage();
+    protected abstract String onCreateTitleMessage();
 
     /**
-     * 表示するメニューリストに対応するリソースIDを返します。
+     * 表示するメニューリストに対応するリソースIDを作成し返します。
      * このメソッドを継承先で実装してください。
      * @return メニューリストに対応するリソースID
      */
-    protected abstract int getTextArrayResId();
+    protected abstract int onCreateTextArrayResId();
 
     /* アクティビティへのアタッチ時に呼び出される */
     @Override
@@ -47,7 +49,7 @@ public abstract class AbstractMenuListFragment extends Fragment
         super.onAttach(context);
         // パラメータを設定
         Bundle args = new Bundle();
-        args.putString(KEY, getTitleMessage());
+        args.putString(KEY, onCreateTitleMessage());
         setArguments(args);
     }
 
@@ -76,7 +78,7 @@ public abstract class AbstractMenuListFragment extends Fragment
         ListView menuList = view.findViewById(R.id.menu_list);
         menuList.setAdapter(ArrayAdapter.createFromResource(
                 getContext(),
-                getTextArrayResId(),
+                onCreateTextArrayResId(),
                 android.R.layout.simple_list_item_1
         ));
         menuList.setOnItemClickListener(this);

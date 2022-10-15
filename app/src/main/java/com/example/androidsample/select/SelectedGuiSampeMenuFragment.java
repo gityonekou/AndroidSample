@@ -34,6 +34,8 @@ import com.example.androidsample.R;
  * 1.トップメニュー、サブメニューをフラグメントに変更
  *    AbstractMenuList継承にてSelectedGuiSampeMenuをフラグメントに変更
  * 2.javadoc追加対応
+ * ver2.01 更新
+ * ・タイトルとメニューリストのリソースID設定メソッドの名前変更
  *
  */
 public class SelectedGuiSampeMenuFragment extends AbstractMenuListFragment {
@@ -54,12 +56,12 @@ public class SelectedGuiSampeMenuFragment extends AbstractMenuListFragment {
     }
 
     @Override
-    protected String getTitleMessage() {
+    protected String onCreateTitleMessage() {
         return title;
     }
 
     @Override
-    protected int getTextArrayResId() {
+    protected int onCreateTextArrayResId() {
         return R.array.selected_gui_menu;
     }
 
